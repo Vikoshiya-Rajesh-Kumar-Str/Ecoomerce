@@ -1,8 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
-// import Hero from './components/Hero';
-// import Categories from './components/Categories';
-// import ProductGrid from './components/ProductGrid';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -368,13 +365,26 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                 <span>Back to Products</span>
               </button>
             </div>
-            <ProductGrid
-              products={favorites}
-              onAddToCart={handleAddToCart}
-              onAddToWishlist={handleAddToWishlist}
-              title="My Favorites"
-              favorites={favorites}
-            />
+            <section className="py-16 bg-gray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">My Favorites</h2>
+                  <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {favorites.map((product, index) => (
+                    <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
+                      <ProductCard
+                        product={product}
+                        onAddToCart={handleAddToCart}
+                        onAddToWishlist={handleAddToWishlist}
+                        isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
           </div>
         ) : (
           <>
@@ -400,13 +410,26 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
               </div>
             )}
             {(searchQuery || selectedCategory) && (
-              <ProductGrid
-                products={filteredProducts}
-                onAddToCart={handleAddToCart}
-                onAddToWishlist={handleAddToWishlist}
-                title={getGridTitle()}
-                favorites={favorites}
-              />
+              <section className="py-16 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">{getGridTitle()}</h2>
+                    <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {filteredProducts.map((product, index) => (
+                      <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
+                        <ProductCard
+                          product={product}
+                          onAddToCart={handleAddToCart}
+                          onAddToWishlist={handleAddToWishlist}
+                          isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
             )}
           </>
         )}
