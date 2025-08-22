@@ -55,13 +55,17 @@ const CategoryListPage = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <button
-                onClick={onBack}
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onBack();
+                }}
                 className="flex items-center space-x-2 text-blue-900 hover:text-blue-700 transition-colors"
               >
                 <ArrowLeft className="w-5 h-5" />
                 <span className="font-medium">Back</span>
-              </button>
+              </a>
               <div className="h-6 w-px bg-gray-300"></div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">{category}</h1>

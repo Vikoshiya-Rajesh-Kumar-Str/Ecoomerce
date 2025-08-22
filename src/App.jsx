@@ -283,6 +283,10 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
       return;
     }
     setShowFavorites(!showFavorites);
+    // Scroll to top when opening favorites
+    if (!showFavorites) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleSearchChange = (query) => {
@@ -296,6 +300,8 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
     setSearchQuery('');
     setSelectedCategory('');
     setShowFavorites(false);
+    // Scroll to top when opening category list
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // New function to handle returning to home page
@@ -305,6 +311,8 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
     setShowFavorites(false);
     setShowCategoryList(false);
     setSelectedCategoryForList('');
+    // Scroll to top when returning to home
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackFromCategoryList = () => {
@@ -343,6 +351,17 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
       />
       
       <main className="pt-20">
+        {/* Navigation Anchors */}
+        <div id="home" className="sr-only">Home</div>
+        <div id="favorites" className="sr-only">Favorites</div>
+        <div id="cart" className="sr-only">Cart</div>
+        <div id="checkout" className="sr-only">Checkout</div>
+        <div id="login" className="sr-only">Login</div>
+        <div id="products" className="sr-only">Products</div>
+        <div id="categories" className="sr-only">Categories</div>
+        <div id="about" className="sr-only">About</div>
+        <div id="contact" className="sr-only">Contact</div>
+        
         {showCategoryList ? (
           <CategoryListPage
             category={selectedCategoryForList}
@@ -357,13 +376,17 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
         ) : showFavorites ? (
           <div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-              <button
-                onClick={() => setShowFavorites(false)}
-                className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2"
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowFavorites(false);
+                }}
+                className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2 inline-flex"
               >
                 <span>←</span>
                 <span>Back to Products</span>
-              </button>
+              </a>
             </div>
             <section className="py-16 bg-gray-50">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -400,13 +423,17 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
             
             {(searchQuery || selectedCategory) && (
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-                <button
-                  onClick={handleReturnToHome}
-                  className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2"
+                <a
+                  href="#home"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleReturnToHome();
+                  }}
+                  className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2 inline-flex"
                 >
                   <span>←</span>
                   <span>Back to Home</span>
-                </button>
+                </a>
               </div>
             )}
             {(searchQuery || selectedCategory) && (

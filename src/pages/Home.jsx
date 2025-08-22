@@ -482,10 +482,14 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
                 }}
               >
                 {defaultCategories.map((category) => (
-                  <button
+                  <a
                     key={category.id}
-                    onClick={() => handleCategorySelect(category.name)}
-                    className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 flex-shrink-0 overflow-hidden"
+                    href={`#category-${category.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleCategorySelect(category.name);
+                    }}
+                    className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 flex-shrink-0 overflow-hidden block"
                     style={{ width: '280px', height: '220px' }}
                   >
                     <div className="relative h-32 overflow-hidden">
@@ -504,7 +508,7 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
                         {category.productCount} products
                       </p>
                     </div>
-                  </button>
+                  </a>
                 ))}
               </div>
             </div>
@@ -512,10 +516,14 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
             {/* Mobile: 4 Grid Layout */}
             <div className="md:hidden grid grid-cols-2 gap-4">
               {defaultCategories.slice(0, 4).map((category) => (
-                <button
+                <a
                   key={category.id}
-                  onClick={() => handleCategorySelect(category.name)}
-                  className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden"
+                  href={`#category-${category.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleCategorySelect(category.name);
+                  }}
+                  className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden block"
                 >
                   <div className="relative h-24 overflow-hidden">
                     <img
@@ -525,15 +533,15 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent"></div>
                   </div>
-                  <div className="p-4 text-center">
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm leading-tight group-hover:text-blue-900 transition-colors">
-                      {category.name}
-                    </h3>
-                    <p className="text-xs text-gray-500 font-medium">
-                      {category.productCount} products
-                    </p>
-                  </div>
-                </button>
+                                      <div className="p-4 text-center">
+                      <h3 className="font-semibold text-gray-900 mb-1 text-sm leading-tight group-hover:text-blue-900 transition-colors">
+                        {category.name}
+                      </h3>
+                      <p className="text-xs text-gray-500 font-medium">
+                        {category.productCount} products
+                      </p>
+                    </div>
+                  </a>
               ))}
             </div>
           </div>
