@@ -182,8 +182,12 @@ const LoginPage = ({ onLoginSuccess, onClose }) => {
         overflow: 'auto',
         boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
       }}>
-        <button 
-          onClick={onClose}
+        <a 
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault();
+            onClose();
+          }}
           style={{
             position: 'absolute',
             top: '15px',
@@ -198,11 +202,12 @@ const LoginPage = ({ onLoginSuccess, onClose }) => {
             fontSize: '20px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            textDecoration: 'none'
           }}
         >
           ×
-        </button>
+        </a>
 
         {/* Toggle Buttons */}
         <div style={{ display: 'flex', marginBottom: '30px', borderBottom: '2px solid #e5e7eb' }}>

@@ -27,12 +27,16 @@ const Cart = ({
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b">
             <h2 className="text-xl font-semibold text-gray-900">Shopping Cart</h2>
-            <button
-              onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                onClose();
+              }}
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors inline-flex items-center"
             >
               <X className="w-5 h-5" />
-            </button>
+            </a>
           </div>
 
           {/* Cart Items */}
@@ -64,25 +68,37 @@ const Cart = ({
                       
                       {/* Quantity Controls */}
                       <div className="flex items-center space-x-2 mt-2">
-                        <button
-                          onClick={() => onUpdateQuantity(index, Math.max(1, item.quantity - 1))}
-                          className="p-1 hover:bg-gray-200 rounded"
+                        <a
+                          href="#cart"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            onUpdateQuantity(index, Math.max(1, item.quantity - 1));
+                          }}
+                          className="p-1 hover:bg-gray-200 rounded inline-flex items-center"
                         >
                           <Minus className="w-4 h-4" />
-                        </button>
+                        </a>
                         <span className="text-sm font-medium w-8 text-center">{item.quantity}</span>
-                        <button
-                          onClick={() => onUpdateQuantity(index, item.quantity + 1)}
-                          className="p-1 hover:bg-gray-200 rounded"
+                        <a
+                          href="#cart"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            onUpdateQuantity(index, item.quantity + 1);
+                          }}
+                          className="p-1 hover:bg-gray-200 rounded inline-flex items-center"
                         >
                           <Plus className="w-4 h-4" />
-                        </button>
-                        <button
-                          onClick={() => onRemoveItem(index)}
-                          className="p-1 hover:bg-red-100 rounded text-red-500 ml-2"
+                        </a>
+                        <a
+                          href="#cart"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            onRemoveItem(index);
+                          }}
+                          className="p-1 hover:bg-red-100 rounded text-red-500 ml-2 inline-flex items-center"
                         >
                           <Trash2 className="w-4 h-4" />
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div className="text-sm font-medium text-gray-900">
@@ -116,12 +132,16 @@ const Cart = ({
                 </div>
               </div>
               
-              <button
-                onClick={onCheckout}
-                className="w-full bg-blue-900 text-white py-3 px-4 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+              <a
+                href="#checkout"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onCheckout();
+                }}
+                className="w-full bg-blue-900 text-white py-3 px-4 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-block text-center"
               >
                 Proceed to Checkout
-              </button>
+              </a>
             </div>
           )}
         </div>

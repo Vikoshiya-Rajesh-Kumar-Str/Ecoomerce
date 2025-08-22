@@ -1,8 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
-// import Hero from './components/Hero';
-// import Categories from './components/Categories';
-// import ProductGrid from './components/ProductGrid';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -286,6 +283,10 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
       return;
     }
     setShowFavorites(!showFavorites);
+    // Scroll to top when opening favorites
+    if (!showFavorites) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleSearchChange = (query) => {
@@ -299,6 +300,8 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
     setSearchQuery('');
     setSelectedCategory('');
     setShowFavorites(false);
+    // Scroll to top when opening category list
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // New function to handle returning to home page
@@ -308,6 +311,8 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
     setShowFavorites(false);
     setShowCategoryList(false);
     setSelectedCategoryForList('');
+    // Scroll to top when returning to home
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackFromCategoryList = () => {
@@ -346,6 +351,17 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
       />
       
       <main className="pt-20">
+        {/* Navigation Anchors */}
+        <div id="home" className="sr-only">Home</div>
+        <div id="favorites" className="sr-only">Favorites</div>
+        <div id="cart" className="sr-only">Cart</div>
+        <div id="checkout" className="sr-only">Checkout</div>
+        <div id="login" className="sr-only">Login</div>
+        <div id="products" className="sr-only">Products</div>
+        <div id="categories" className="sr-only">Categories</div>
+        <div id="about" className="sr-only">About</div>
+        <div id="contact" className="sr-only">Contact</div>
+        
         {showCategoryList ? (
           <CategoryListPage
             category={selectedCategoryForList}
@@ -360,21 +376,38 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
         ) : showFavorites ? (
           <div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-              <button
-                onClick={() => setShowFavorites(false)}
-                className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2"
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowFavorites(false);
+                }}
+                className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2 inline-flex"
               >
                 <span>←</span>
                 <span>Back to Products</span>
-              </button>
+              </a>
             </div>
-            <ProductGrid
-              products={favorites}
-              onAddToCart={handleAddToCart}
-              onAddToWishlist={handleAddToWishlist}
-              title="My Favorites"
-              favorites={favorites}
-            />
+            <section className="py-16 bg-gray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">My Favorites</h2>
+                  <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {favorites.map((product, index) => (
+                    <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
+                      <ProductCard
+                        product={product}
+                        onAddToCart={handleAddToCart}
+                        onAddToWishlist={handleAddToWishlist}
+                        isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
           </div>
         ) : (
           <>
@@ -390,23 +423,40 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
             
             {(searchQuery || selectedCategory) && (
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-                <button
-                  onClick={handleReturnToHome}
-                  className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2"
+                <a
+                  href="#home"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleReturnToHome();
+                  }}
+                  className="mb-6 px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center space-x-2 inline-flex"
                 >
                   <span>←</span>
                   <span>Back to Home</span>
-                </button>
+                </a>
               </div>
             )}
             {(searchQuery || selectedCategory) && (
-              <ProductGrid
-                products={filteredProducts}
-                onAddToCart={handleAddToCart}
-                onAddToWishlist={handleAddToWishlist}
-                title={getGridTitle()}
-                favorites={favorites}
-              />
+              <section className="py-16 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">{getGridTitle()}</h2>
+                    <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {filteredProducts.map((product, index) => (
+                      <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
+                        <ProductCard
+                          product={product}
+                          onAddToCart={handleAddToCart}
+                          onAddToWishlist={handleAddToWishlist}
+                          isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
             )}
           </>
         )}

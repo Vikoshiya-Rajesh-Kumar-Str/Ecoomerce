@@ -30,11 +30,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-yellow-400">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-blue-100 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-blue-100 hover:text-white transition-colors">Products</a></li>
-              <li><a href="#" className="text-blue-100 hover:text-white transition-colors">Categories</a></li>
-              <li><a href="#" className="text-blue-100 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-blue-100 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#home" className="text-blue-100 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#products" className="text-blue-100 hover:text-white transition-colors">Products</a></li>
+              <li><a href="#categories" className="text-blue-100 hover:text-white transition-colors">Categories</a></li>
+              <li><a href="#about" className="text-blue-100 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#contact" className="text-blue-100 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 

@@ -43,9 +43,16 @@ const Header = ({
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button onClick={onLogoClick} className="text-2xl font-bold text-white-400">
+            <a 
+              href="#home" 
+              onClick={(e) => {
+                e.preventDefault();
+                onLogoClick();
+              }} 
+              className="text-2xl font-bold text-white-400 hover:text-white cursor-pointer transition-colors"
+            >
               VIKOSHIYA
-            </button>
+            </a>
           </div>
 
           {/* Search Bar - Desktop */}
@@ -64,9 +71,13 @@ const Header = ({
 
           {/* Navigation Icons */}
           <div className="flex items-center space-x-4">
-            <button 
-              onClick={onFavoritesClick}
-              className="relative p-2 hover:bg-blue-800 rounded-full transition-colors"
+            <a 
+              href="#favorites" 
+              onClick={(e) => {
+                e.preventDefault();
+                onFavoritesClick();
+              }}
+              className="relative p-2 hover:bg-blue-800 rounded-full transition-colors inline-flex items-center"
             >
               <Heart className="w-6 h-6" />
               {favoritesCount > 0 && (
@@ -74,7 +85,7 @@ const Header = ({
                   {favoritesCount}
                 </span>
               )}
-            </button>
+            </a>
             {isLoggedIn ? (
               <div className="relative user-menu">
                 <button 
@@ -105,16 +116,24 @@ const Header = ({
                 )}
               </div>
             ) : (
-              <button 
-                onClick={onLoginClick}
-                className="px-4 py-2 bg-white-400 text-black-500 rounded-full font-semibold hover:bg-blue-00 transition-colors"
+              <a 
+                href="#login" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  onLoginClick();
+                }}
+                className="px-4 py-2 bg-white-400 text-black-500 rounded-full font-semibold hover:bg-blue-100 transition-colors inline-block"
               >
                 Login
-              </button>
+              </a>
             )}
-            <button
-              onClick={onCartClick}
-              className="relative p-2 hover:bg-blue-800 rounded-full transition-colors"
+            <a 
+              href="#cart" 
+              onClick={(e) => {
+                e.preventDefault();
+                onCartClick();
+              }}
+              className="relative p-2 hover:bg-blue-800 rounded-full transition-colors inline-flex items-center"
             >
               <ShoppingCart className="w-6 h-6" />
               {cartItemCount > 0 && (
@@ -122,7 +141,7 @@ const Header = ({
                   {cartItemCount}
                 </span>
               )}
-            </button>
+            </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 hover:bg-blue-800 rounded-full transition-colors"

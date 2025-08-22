@@ -51,13 +51,29 @@ const Checkout = ({ isOpen, onClose, items, onOrderComplete }) => {
         <div className="relative bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b">
-            <h2 className="text-2xl font-bold text-gray-900">Checkout</h2>
-            <button
-              onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            <div className="flex items-center space-x-4">
+              <h2 className="text-2xl font-bold text-gray-900">Checkout</h2>
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onClose();
+                }}
+                className="text-sm text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                Continue Shopping
+              </a>
+            </div>
+            <a
+              href="#cart"
+              onClick={(e) => {
+                e.preventDefault();
+                onClose();
+              }}
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors inline-flex items-center"
             >
               <X className="w-6 h-6" />
-            </button>
+            </a>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 p-6">

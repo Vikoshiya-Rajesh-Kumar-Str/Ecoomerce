@@ -55,13 +55,17 @@ const CategoryListPage = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <button
-                onClick={onBack}
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onBack();
+                }}
                 className="flex items-center space-x-2 text-blue-900 hover:text-blue-700 transition-colors"
               >
                 <ArrowLeft className="w-5 h-5" />
                 <span className="font-medium">Back</span>
-              </button>
+              </a>
               <div className="h-6 w-px bg-gray-300"></div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">{category}</h1>
@@ -140,8 +144,12 @@ const CategoryListPage = ({
                           {calculateDiscount(parseInt(product['old-price']), parseInt(product['new-price']))}% OFF
                         </div>
                       )}
-                      <button
-                        onClick={() => onAddToWishlist(product)}
+                      <a
+                        href="#favorites"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onAddToWishlist(product);
+                        }}
                         className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 ${
                           isInWishlist(product)
                             ? 'bg-pink-500 text-white'
@@ -151,7 +159,7 @@ const CategoryListPage = ({
                         <svg className="w-4 h-4" fill={isInWishlist(product) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                     <div className="p-4">
                       <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-900 transition-colors">
@@ -169,12 +177,16 @@ const CategoryListPage = ({
                           )}
                         </div>
                       </div>
-                      <button
-                        onClick={() => onAddToCart(product)}
-                        className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+                      <a
+                        href="#cart"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onAddToCart(product);
+                        }}
+                        className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-block text-center"
                       >
                         Add to Cart
-                      </button>
+                      </a>
                     </div>
                   </>
                 ) : (
@@ -208,8 +220,12 @@ const CategoryListPage = ({
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <button
-                        onClick={() => onAddToWishlist(product)}
+                      <a
+                        href="#favorites"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onAddToWishlist(product);
+                        }}
                         className={`p-2 rounded-full transition-all duration-200 ${
                           isInWishlist(product)
                             ? 'bg-pink-500 text-white'
@@ -219,13 +235,17 @@ const CategoryListPage = ({
                         <svg className="w-4 h-4" fill={isInWishlist(product) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
-                      </button>
-                      <button
-                        onClick={() => onAddToCart(product)}
-                        className="bg-blue-900 text-white py-2 px-6 rounded-lg hover:bg-blue-800 transition-colors font-medium"
+                      </a>
+                      <a
+                        href="#cart"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          onAddToCart(product);
+                        }}
+                        className="bg-blue-900 text-white py-2 px-6 rounded-lg hover:bg-blue-800 transition-colors font-medium inline-block"
                       >
                         Add to Cart
-                      </button>
+                      </a>
                     </div>
                   </div>
                 )}
