@@ -159,7 +159,7 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
     if (onCategorySelect) {
       onCategorySelect(categoryName);
     } else {
-      console.log('Selected category:', categoryName);
+  
     }
   };
 
