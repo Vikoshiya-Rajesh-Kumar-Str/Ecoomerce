@@ -65,7 +65,11 @@ const Header = ({
           {/* Navigation Icons */}
           <div className="flex items-center space-x-4">
             <button 
-              onClick={onFavoritesClick}
+              onClick={(e) => {
+                console.log('Header wishlist button clicked!');
+                e.preventDefault();
+                onFavoritesClick();
+              }}
               className="relative p-2 hover:bg-blue-800 rounded-full transition-colors"
             >
               <Heart className="w-6 h-6" />

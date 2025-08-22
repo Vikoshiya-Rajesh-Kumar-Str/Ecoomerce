@@ -6,6 +6,8 @@ import Checkout from './pages/Checkout';
 import Footer from './components/Footer';
 import LoginPage from './pages/LoginPage';
 import CategoryListPage from './pages/CategoryListPage';
+import ProductCard from './components/ProductCard';
+import ProductDetailsModal from './components/ProductDetailsModal';
 import productsData from './data/product.json';
 
 function App() {
@@ -22,32 +24,39 @@ const [favorites, setFavorites] = useState([]);
 const [showFavorites, setShowFavorites] = useState(false);
 const [showCategoryList, setShowCategoryList] = useState(false);
 const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
+const [selectedProduct, setSelectedProduct] = useState(null);
 
+
+  // Prepare raw source from productsData (array of raw product objects)
+  const rawSource = useMemo(() => {
+    return Array.isArray(productsData)
+      ? productsData
+      : (productsData && Array.isArray(productsData.products) ? productsData.products : []);
+  }, []);
+
+  // Helper to map raw product to display product object used in UI
+  const mapRawToDisplayProduct = (p) => {
+    const title = p?.characteristics?.title || 'Untitled Product';
+    const imageUrl = p?.characteristics?.images?.primary?.[0]
+      || 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400';
+    const basePrice = p?.pricing?.basePrice ?? 0;
+    const comparePrice = p?.pricing?.comparePrice ?? basePrice;
+    const categoryFromData = p?.anchor?.subcategory || p?.anchor?.category || getProductCategory(title);
+    return {
+      'product-title': title,
+      'image-url': imageUrl,
+      'old-price': String(comparePrice),
+      'new-price': String(basePrice),
+      category: categoryFromData,
+      rating: Math.floor(Math.random() * 2) + 4,
+      reviews: Math.floor(Math.random() * 100) + 10
+    };
+  };
 
   // Load products on component mount
   useEffect(() => {
     try {
-      const source = Array.isArray(productsData)
-        ? productsData
-        : (productsData && Array.isArray(productsData.products) ? productsData.products : []);
-
-      const loadedProducts = source.map((p) => {
-        const title = p?.characteristics?.title || 'Untitled Product';
-        const imageUrl = p?.characteristics?.images?.primary?.[0] ||
-          'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400';
-        const basePrice = p?.pricing?.basePrice ?? 0;
-        const comparePrice = p?.pricing?.comparePrice ?? basePrice;
-
-        return {
-          'product-title': title,
-          'image-url': imageUrl,
-          'old-price': String(comparePrice),
-          'new-price': String(basePrice),
-          category: getProductCategory(title),
-          rating: Math.floor(Math.random() * 2) + 4,
-          reviews: Math.floor(Math.random() * 100) + 10
-        };
-      });
+      const loadedProducts = rawSource.map(mapRawToDisplayProduct);
 
       setProducts(loadedProducts);
       setFilteredProducts(loadedProducts);
@@ -126,55 +135,28 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
     setFilteredProducts(filtered);
   }, [products, searchQuery, selectedCategory]);
 
-  // Compute categories from loaded products for "Shop by Category"
-  const categories = useMemo(() => {
-    // We will present canonical category names used in the app
-    const canonicalCategories = [
-      'Switches & Sockets',
-      'LED Lighting',
-      'Wires & Cables',
-      'Circuit Protection',
-      'Home Appliances',
-      'General'
-    ];
-
-    // Prepare summaries with defaults
-    const summaries = new Map(
-      canonicalCategories.map((name) => [
-        name,
-        {
-          id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
-          name,
-          image:
-            'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=300',
-          productCount: 0
-        }
-      ])
-    );
-
-    // Fill in counts and use the first product image seen for that category
-    for (const product of products) {
-      const categoryName = product.category || 'General';
-      if (!summaries.has(categoryName)) {
-        summaries.set(categoryName, {
-          id: categoryName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
-          name: categoryName,
-          image: product['image-url'],
+  // Compute subcategory thumbnails and counts from raw source for "Shop by Category"
+  const subcategories = useMemo(() => {
+    const summaries = new Map();
+    for (const p of rawSource) {
+      const sub = p?.anchor?.subcategory || 'Other';
+      const firstImage = p?.characteristics?.images?.primary?.[0]
+        || 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=300';
+      if (!summaries.has(sub)) {
+        summaries.set(sub, {
+          id: sub.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+          name: sub,
+          image: firstImage,
           productCount: 0
         });
       }
-      const s = summaries.get(categoryName);
-      if (s.productCount === 0 && product['image-url']) {
-        s.image = product['image-url'];
-      }
+      const s = summaries.get(sub);
+      // Keep the first encountered image as thumbnail
       s.productCount += 1;
     }
-
-    // Return only categories that have at least 1 product, preserving canonical order
-    return canonicalCategories
-      .map((name) => summaries.get(name))
-      .filter((s) => s && s.productCount > 0);
-  }, [products]);
+    // Return in alphabetical order
+    return Array.from(summaries.values()).sort((a, b) => a.name.localeCompare(b.name));
+  }, [rawSource]);
 
   // Helper function to categorize products
   const getProductCategory = (title) => {
@@ -255,34 +237,52 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
   };
 
   const handleAddToWishlist = (product) => {
+    console.log('Adding/removing from wishlist:', product['product-title']);
+    console.log('Current user:', currentUser);
+    
     if (!currentUser) {
+      console.log('No user logged in, opening login modal');
       setIsLoginOpen(true);
       return;
     }
     
     setFavorites(prevFavorites => {
       const isAlreadyFavorite = prevFavorites.find(fav => fav['product-title'] === product['product-title']);
+      console.log('Is already favorite:', isAlreadyFavorite);
       
       if (isAlreadyFavorite) {
         // Remove from favorites
         const newFavorites = prevFavorites.filter(fav => fav['product-title'] !== product['product-title']);
         localStorage.setItem('favorites', JSON.stringify(newFavorites));
+        console.log('Removed from favorites, new count:', newFavorites.length);
         return newFavorites;
       } else {
         // Add to favorites
         const newFavorites = [...prevFavorites, product];
         localStorage.setItem('favorites', JSON.stringify(newFavorites));
+        console.log('Added to favorites, new count:', newFavorites.length);
         return newFavorites;
       }
     });
   };
 
   const handleFavoritesClick = () => {
+    console.log('Wishlist button clicked!');
+    console.log('Current user:', currentUser);
+    console.log('Current showFavorites state:', showFavorites);
+    
     if (!currentUser) {
+      console.log('No user logged in, opening login modal');
       setIsLoginOpen(true);
       return;
     }
+    
+    console.log('User is logged in, toggling favorites page');
     setShowFavorites(!showFavorites);
+    // Scroll to top when opening favorites
+    if (!showFavorites) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const handleSearchChange = (query) => {
@@ -291,6 +291,7 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
   };
 
   const handleCategorySelect = (category) => {
+    // category is a subcategory label now (e.g., "Heaters and Fans")
     setSelectedCategoryForList(category);
     setShowCategoryList(true);
     setSearchQuery('');
@@ -346,8 +347,10 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
         {showCategoryList ? (
           <CategoryListPage
             category={selectedCategoryForList}
-            products={products.filter(product => 
-              product.category && product.category.toLowerCase().includes(selectedCategoryForList.toLowerCase())
+            products={products.filter(product =>
+              product.category && (
+                product.category.toLowerCase() === selectedCategoryForList.toLowerCase()
+              )
             )}
             onBack={handleBackFromCategoryList}
             onAddToCart={handleAddToCart}
@@ -379,6 +382,7 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                         onAddToCart={handleAddToCart}
                         onAddToWishlist={handleAddToWishlist}
                         isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                        onOpenDetails={(p) => setSelectedProduct(p)}
                       />
                     </div>
                   ))}
@@ -395,6 +399,7 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                 onAddToWishlist={handleAddToWishlist}
                 onCategorySelect={handleCategorySelect}
                 favorites={favorites}
+                categories={subcategories}
               />
             )}
             
@@ -424,6 +429,7 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                           onAddToCart={handleAddToCart}
                           onAddToWishlist={handleAddToWishlist}
                           isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                          onOpenDetails={(p) => setSelectedProduct(p)}
                         />
                       </div>
                     ))}
@@ -451,6 +457,12 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
         onOrderComplete={handleOrderComplete}
+      />
+
+      <ProductDetailsModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+        onAddToCart={handleAddToCart}
       />
 
       {isLoginOpen && (
