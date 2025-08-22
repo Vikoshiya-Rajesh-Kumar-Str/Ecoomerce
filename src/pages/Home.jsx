@@ -187,8 +187,13 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
               -{discount}%
             </div>
           )}
-          <button
-            onClick={() => onAddToWishlist?.(product)}
+          <a
+            href="#favorites"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onAddToWishlist?.(product);
+            }}
             className={`absolute top-2 right-2 p-2 rounded-full shadow-md transition-all duration-300 ${
               isFavorite 
                 ? 'bg-red-500 text-white opacity-100' 
@@ -196,7 +201,7 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
             }`}
           >
             <Heart className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
-          </button>
+          </a>
         </div>
 
         {/* Content */}
@@ -241,13 +246,18 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
           </div>
 
           {/* Add to Cart Button */}
-          <button
-            onClick={(e) => { e.stopPropagation(); onOpenDetails?.(product); }}
-            className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors duration-200 flex items-center justify-center space-x-2 font-medium"
+          <a
+            href="#cart"
+            onClick={(e) => { 
+              e.preventDefault();
+              e.stopPropagation(); 
+              onOpenDetails?.(product); 
+            }}
+            className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors duration-200 flex items-center justify-center space-x-2 font-medium inline-block"
           >
             <ShoppingCart className="w-4 h-4" />
             <span>Add to Cart</span>
-          </button>
+          </a>
         </div>
       </div>
     );
@@ -266,9 +276,16 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
           {/* Header */}
           <div className="flex justify-between items-center p-4 border-b">
             <h2 className="text-xl font-semibold">{product['product-title']}</h2>
-            <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                onClose();
+              }}
+              className="text-gray-500 hover:text-gray-700"
+            >
               <X className="w-6 h-6" />
-            </button>
+            </a>
           </div>
 
           {/* Body */}
@@ -315,16 +332,18 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
               </p>
 
               {/* Add to cart */}
-              <button
-                onClick={() => {
+              <a
+                href="#cart"
+                onClick={(e) => {
+                  e.preventDefault();
                   onAddToCart(product);
                   onClose();
                 }}
-                className="bg-blue-900 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-blue-800"
+                className="bg-blue-900 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-blue-800 inline-flex"
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span>Add to Cart</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
