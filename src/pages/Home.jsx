@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Zap, Shield, Truck, Award } from 'lucide-rea
 import ProductCard from '../components/ProductCard';
 import ProductDetailsModal from '../components/ProductDetailsModal';
 
-const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, favorites = [], categories = [] }) => {
+const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, onOpenDetails, favorites = [], categories = [] }) => {
   // Hero component state
   const [currentSlide, setCurrentSlide] = useState(0);
   
@@ -359,7 +359,6 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
               {products.map((product, index) => (
                 <div
                   key={`${product['product-title']}-${index}`}
-                  onClick={() => setSelectedProduct(product)}
                   className="cursor-pointer"
                 >
                   <ProductCard
@@ -367,7 +366,7 @@ const Home = ({ products = [], onAddToCart, onAddToWishlist, onCategorySelect, f
                     onAddToCart={onAddToCart}
                     onAddToWishlist={onAddToWishlist}
                     isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
-                    onOpenDetails={(p) => setSelectedProduct(p)}
+                    onOpenDetails={onOpenDetails}
                   />
                 </div>
               ))}

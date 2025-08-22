@@ -7,6 +7,7 @@ const CategoryListPage = ({
   onBack, 
   onAddToCart, 
   onAddToWishlist, 
+  onOpenDetails,
   favorites = [] 
 }) => {
   const [viewMode, setViewMode] = React.useState('grid');
@@ -126,9 +127,10 @@ const CategoryListPage = ({
               <div
                 key={index}
                 className={viewMode === 'grid' 
-                  ? "bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group"
-                  : "bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 overflow-hidden"
+                  ? "bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 overflow-hidden group cursor-pointer"
+                  : "bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 overflow-hidden cursor-pointer"
                 }
+                onClick={() => onOpenDetails && onOpenDetails(product)}
               >
                 {viewMode === 'grid' ? (
                   // Grid View

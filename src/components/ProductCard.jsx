@@ -7,7 +7,10 @@ const ProductCard = ({ product, onAddToCart, onAddToWishlist, isFavorite = false
   const discount = Math.round(((oldPrice - newPrice) / oldPrice) * 100);
 
   return (
-    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+    <div 
+      className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group cursor-pointer"
+      onClick={() => onOpenDetails?.(product)}
+    >
       {/* Image Container */}
       <div className="relative overflow-hidden">
         <img
@@ -88,7 +91,7 @@ const ProductCard = ({ product, onAddToCart, onAddToWishlist, isFavorite = false
           onClick={(e) => { 
             e.preventDefault();
             e.stopPropagation(); 
-            onOpenDetails?.(product); 
+            onAddToCart?.(product); 
           }}
           className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors duration-200 flex items-center justify-center space-x-2 font-medium inline-block"
         >
