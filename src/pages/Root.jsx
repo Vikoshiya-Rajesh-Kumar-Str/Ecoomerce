@@ -1,20 +1,21 @@
 import { useState, useEffect, useMemo } from 'react';
 import Header from '../components/Header';
 import Home from './Home';
-import Cart from './Cart';
+import CartPage from './CartPage';
 import Checkout from './Checkout';
 import Footer from '../components/Footer';
 import LoginPage from './LoginPage';
 import CategoryListPage from './CategoryListPage';
 import ProductCard from '../components/ProductCard';
 import ProductDetailsPage from './ProductDetailsPage';
+import FavoritesPage from './FavoritesPage';
 import productsData from '../data/product.json';
 
 function Root() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [showCartPage, setShowCartPage] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -26,6 +27,7 @@ function Root() {
   const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [showProductDetailsPage, setShowProductDetailsPage] = useState(false);
+  const [showFavoritesPage, setShowFavoritesPage] = useState(false);
 
   const rawSource = useMemo(() => {
     return Array.isArray(productsData)
@@ -180,7 +182,8 @@ function Root() {
         return [...prevItems, { ...product, quantity: 1 }];
       }
     });
-    setIsCartOpen(true);
+    // Optionally open cart page after adding
+    // setShowCartPage(true);
   };
 
   const handleUpdateQuantity = (index, quantity) => {
@@ -247,10 +250,7 @@ function Root() {
       setIsLoginOpen(true);
       return;
     }
-    setShowFavorites(!showFavorites);
-    if (!showFavorites) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    setShowFavoritesPage(true);
   };
 
   const handleSearchChange = (query) => {
@@ -308,7 +308,7 @@ function Root() {
       <Header
         cartItemCount={getTotalCartItems()}
         favoritesCount={favorites.length}
-        onCartClick={() => setIsCartOpen(true)}
+        onCartClick={() => setShowCartPage(true)}
         onSearchChange={handleSearchChange}
         onLoginClick={handleLoginClick}
         onLogout={handleLogout}
@@ -319,7 +319,23 @@ function Root() {
         currentUser={currentUser || undefined}
       />
       <main className="pt-20">
-        {showProductDetailsPage && selectedProduct ? (
+        {showCartPage ? (
+          <CartPage
+            items={cartItems}
+            onBack={() => setShowCartPage(false)}
+            onUpdateQuantity={handleUpdateQuantity}
+            onRemoveItem={handleRemoveItem}
+            onCheckout={() => { setShowCartPage(false); setIsCheckoutOpen(true); }}
+          />
+        ) : showFavoritesPage ? (
+          <FavoritesPage
+            favorites={favorites}
+            onBack={() => setShowFavoritesPage(false)}
+            onAddToCart={handleAddToCart}
+            onAddToWishlist={handleAddToWishlist}
+            onOpenDetails={handleOpenProductDetailsPage}
+          />
+        ) : showProductDetailsPage && selectedProduct ? (
           <ProductDetailsPage
             product={selectedProduct}
             onBack={handleBackFromProductDetails}
@@ -426,14 +442,7 @@ function Root() {
         )}
       </main>
       <Footer />
-      <Cart
-        isOpen={isCartOpen}
-        onClose={() => setIsCartOpen(false)}
-        items={cartItems}
-        onUpdateQuantity={handleUpdateQuantity}
-        onRemoveItem={handleRemoveItem}
-        onCheckout={handleCheckout}
-      />
+      {/* Sidebar cart removed in favor of full page CartPage */}
       <Checkout
         isOpen={isCheckoutOpen}
         onClose={() => setIsCheckoutOpen(false)}
