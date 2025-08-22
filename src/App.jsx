@@ -6,6 +6,8 @@ import Checkout from './pages/Checkout';
 import Footer from './components/Footer';
 import LoginPage from './pages/LoginPage';
 import CategoryListPage from './pages/CategoryListPage';
+import ProductCard from './components/ProductCard';
+import ProductDetailsModal from './components/ProductDetailsModal';
 import productsData from './data/product.json';
 
 function App() {
@@ -22,6 +24,7 @@ const [favorites, setFavorites] = useState([]);
 const [showFavorites, setShowFavorites] = useState(false);
 const [showCategoryList, setShowCategoryList] = useState(false);
 const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
+const [selectedProduct, setSelectedProduct] = useState(null);
 
 
   // Load products on component mount
@@ -393,19 +396,37 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">My Favorites</h2>
                   <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                  {favorites.map((product, index) => (
-                    <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
-                      <ProductCard
-                        product={product}
-                        onAddToCart={handleAddToCart}
-                        onAddToWishlist={handleAddToWishlist}
-                        isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
-                      />
+                  {favorites.length === 0 && (
+                    <div className="mt-8">
+                      <p className="text-gray-600 mb-4">You haven't added any products to your favorites yet.</p>
+                      <a
+                        href="#home"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setShowFavorites(false);
+                        }}
+                        className="inline-flex items-center px-6 py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors"
+                      >
+                        Continue Shopping
+                      </a>
                     </div>
-                  ))}
+                  )}
                 </div>
+                {favorites.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {favorites.map((product, index) => (
+                      <div key={`${product['product-title']}-${index}`} className="cursor-pointer">
+                        <ProductCard
+                          product={product}
+                          onAddToCart={handleAddToCart}
+                          onAddToWishlist={handleAddToWishlist}
+                          isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                          onOpenDetails={(p) => setSelectedProduct(p)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </section>
           </div>
@@ -451,6 +472,7 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
                           onAddToCart={handleAddToCart}
                           onAddToWishlist={handleAddToWishlist}
                           isFavorite={favorites.some((fav) => fav['product-title'] === product['product-title'])}
+                          onOpenDetails={(p) => setSelectedProduct(p)}
                         />
                       </div>
                     ))}
@@ -478,6 +500,12 @@ const [selectedCategoryForList, setSelectedCategoryForList] = useState('');
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
         onOrderComplete={handleOrderComplete}
+      />
+
+      <ProductDetailsModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+        onAddToCart={handleAddToCart}
       />
 
       {isLoginOpen && (
