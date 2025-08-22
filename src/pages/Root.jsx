@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import LoginPage from './LoginPage';
 import CategoryListPage from './CategoryListPage';
 import ProductCard from '../components/ProductCard';
-import ProductDetailsModal from '../components/ProductDetailsModal';
 import ProductDetailsPage from './ProductDetailsPage';
 import productsData from '../data/product.json';
 
@@ -440,11 +439,6 @@ function Root() {
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
         onOrderComplete={handleOrderComplete}
-      />
-      <ProductDetailsModal
-        product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
-        onAddToCart={handleAddToCart}
       />
       {isLoginOpen && (
         <LoginPage
