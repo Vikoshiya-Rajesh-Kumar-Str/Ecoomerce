@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Page</title>
+  <link rel="stylesheet" href="card.css" />
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!-- Add this in the <head> of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="overflow-y-auto">
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav_logo">VIKOSHIYA</a>
+      <!-- Header -->
+      <button class="menu-toggle" aria-label="Menu">
+        &#9776;
+      </button>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search for products, brands, categories..."
+          id="searchInput">
+        <i class="fas fa-search" id="searchIcon"></i>
+        <!-- Search Results Dropdown -->
+        <div class="search-results" id="searchResults">
+          <!-- Results will be populated here -->
+        </div>
+      </div>
+      <!-- Login Button (shown when not logged in) -->
+      <button class="button" id="form-open">Login</button>
+   
+    </nav>
+</header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+
+            <!-- Empty Cart Section -->
+            <div class="empty-cart">
+                <div class="empty-cart-icon">
+                    <i class="fa-regular fa-face-sad-tear"></i>
+                </div>
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you haven't added any items to your cart yet.<br>
+                Start shopping to fill it up with amazing products!</p>
+                <a href="#" class="continue-shopping-btn">
+                    <i class="fas fa-shopping-bag"></i> Continue Shopping
+                </a>
+            </div>
+
+            <!-- Cart with Items Section -->
+            <div class="cart-with-items">
+                <div class="cart-table-container">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <img src="https://via.placeholder.com/80x80/1e3a8a/ffffff?text=LED" alt="LED Switch" class="product-image">
+                                        <div class="product-details">
+                                            <h4>Smart LED Switch</h4>
+                                            <p>Model: SW-001</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">₹1,299</td>
+                                <td>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn">-</button>
+                                        <input type="number" value="2" min="1" class="quantity-input">
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="price">₹2,598</td>
+                                <td>
+                                    <button class="remove-btn">
+                                        <i class="fas fa-trash-alt"></i> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <img src="https://via.placeholder.com/80x80/1e3a8a/ffffff?text=WIRE" alt="Electrical Wire" class="product-image">
+                                        <div class="product-details">
+                                            <h4>Copper Electrical Wire</h4>
+                                            <p>2.5mm - 90 meters</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">₹850</td>
+                                <td>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn">-</button>
+                                        <input type="number" value="1" min="1" class="quantity-input">
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="price">₹850</td>
+                                <td>
+                                    <button class="remove-btn">
+                                        <i class="fas fa-trash-alt"></i> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <img src="https://via.placeholder.com/80x80/1e3a8a/ffffff?text=MCB" alt="Circuit Breaker" class="product-image">
+                                        <div class="product-details">
+                                            <h4>MCB Circuit Breaker</h4>
+                                            <p>16A Single Pole</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">₹425</td>
+                                <td>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn">-</button>
+                                        <input type="number" value="3" min="1" class="quantity-input">
+                                        <button class="quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td class="price">₹1,275</td>
+                                <td>
+                                    <button class="remove-btn">
+                                        <i class="fas fa-trash-alt"></i> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3 style="margin-bottom: 20px; color: #1e3a8a;">Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (6 items):</span>
+                        <span>₹4,723</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span>₹99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (18% GST):</span>
+                        <span>₹850</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span style="color: #28a745;">-₹200</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span>₹5,472</span>
+                    </div>
+                    
+                    <button class="checkout-btn">
+                        <i class="fas fa-lock"></i> Proceed to Checkout
+                    </button>
+                    
+                    <div class="continue-shopping">
+                        <a href="#"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- About Us -->
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                    Vikoshiya is a trusted destination for high-quality electrical products built on reliability,
+                    safety, and innovation. From advanced wiring kits to smart home switches, we empower homes and
+                    businesses with the latest in electrical technology.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flash Sales</a></li>
+                    <li><a href="#">Product Categories</a></li>
+                    <li><a href="#">Latest launch</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: support@vikoshiya.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Location: Virudhunagar, India</p>
+            </div>
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VIKOSHIYA. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

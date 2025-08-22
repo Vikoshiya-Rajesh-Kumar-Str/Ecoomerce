@@ -1,0 +1,2668 @@
+{
+  "products": [
+    {
+      "identifiers": {
+        "productId": "ELEC-SW-001",
+        "sku": "SW-MOD-16A-001",
+        "slug": "modular-switch-16amp-white",
+        "barcode": "8901030875649"
+      },
+      "characteristics": {
+        "title": "16A Modular Switch - White",
+        "description": "Premium quality 16 Amp modular switch with elegant white finish. Features easy installation, durable construction, and modern design suitable for residential and commercial applications.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/46/75/67/4675678cf2a86a108410a9574da7cd23.jpg",
+            "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg",
+            "https://i.pinimg.com/736x/a8/0d/32/a80d32d1fb96c23775f1c508f1181518.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/16_Amp_Switch_Desk_Banner.webp"
+        },
+        "specifications": [
+          {
+            "group": "Electrical",
+            "name": "Current Rating",
+            "value": "16",
+            "unit": "A"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage Rating",
+            "value": "250",
+            "unit": "V"
+          },
+          {
+            "group": "Physical",
+            "name": "Module Size",
+            "value": "2",
+            "unit": "module"
+          },
+          {
+            "group": "Technical",
+            "name": "Contact Material",
+            "value": "Silver Alloy",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 45,
+          "unit": "grams"
+        },
+        "dimensions": {
+          "length": 71,
+          "width": 71,
+          "height": 44,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Switches",
+        "subSubcategory": "Modular Switches",
+        "brand": "Havells",
+        "manufacturer": "Havells India Ltd",
+        "productType": "Component"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "White",
+            "sku": "SW-MOD-16A-WHT",
+            "price": 285,
+            "inventory": 150,
+            "images": [
+              "https://i.pinimg.com/736x/46/75/67/4675678cf2a86a108410a9574da7cd23.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Ivory",
+            "sku": "SW-MOD-16A-IVY",
+            "price": 285,
+            "inventory": 75,
+            "images": [
+              "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Black",
+            "sku": "SW-MOD-16A-BLK",
+            "price": 295,
+            "inventory": 50,
+            "images": [
+              "https://i.pinimg.com/736x/a8/0d/32/a80d32d1fb96c23775f1c508f1181518.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate",
+          "certification": [
+            "ISI",
+            "BIS",
+            "CE"
+          ],
+          "warrantyPeriod": "2 years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 285,
+        "comparePrice": 350,
+        "costPrice": 225,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "bulk",
+            "value": 10,
+            "minQuantity": 50,
+            "validFrom": "2024-01-01T00:00:00Z",
+            "validTo": "2024-12-31T23:59:59Z",
+            "isActive": true
+          },
+          {
+            "type": "percentage",
+            "value": 15,
+            "minQuantity": 1,
+            "validFrom": "2024-08-01T00:00:00Z",
+            "validTo": "2024-08-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 275,
+        "availableQuantity": 260,
+        "reservedQuantity": 15,
+        "lowStockThreshold": 25,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 99,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 100,
+            "maxQuantity": 999,
+            "discountPercentage": 15
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "switch",
+          "modular",
+          "16amp",
+          "residential",
+          "commercial"
+        ],
+        "metaTitle": "16A Modular Switch White | Premium Quality | Havells",
+        "metaDescription": "Buy premium 16A modular switch in white finish. ISI certified, 2-year warranty. Perfect for homes and offices. Best prices guaranteed.",
+        "keywords": [
+          "modular switch",
+          "16 amp switch",
+          "electrical switch",
+          "havells switch",
+          "white switch"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 1,
+        "promotionText": "15% Off This Month"
+      },
+      "timestamps": {
+        "createdAt": "2024-01-15T10:30:00Z",
+        "updatedAt": "2024-08-10T14:22:00Z",
+        "publishedAt": "2024-01-16T09:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-SW-002",
+        "sku": "SW-MOD-10A-002",
+        "slug": "modular-switch-10amp-ivory",
+        "barcode": "8901030875650"
+      },
+      "characteristics": {
+        "title": "10A Modular Switch - Ivory",
+        "description": "Durable 10 Amp modular switch in classic ivory finish. Compact design suitable for household and office applications.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg",
+            "https://i.pinimg.com/736x/46/75/67/4675678cf2a86a108410a9574da7cd23.jpg",
+            "https://i.pinimg.com/736x/a8/0d/32/a80d32d1fb96c23775f1c508f1181518.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/16_Amp_Switch_Desk_Banner.webp"
+        },
+        "specifications": [
+          {
+            "group": "Electrical",
+            "name": "Current Rating",
+            "value": "10",
+            "unit": "A"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage Rating",
+            "value": "240",
+            "unit": "V"
+          },
+          {
+            "group": "Physical",
+            "name": "Module Size",
+            "value": "1",
+            "unit": "module"
+          }
+        ],
+        "weight": {
+          "value": 40,
+          "unit": "grams"
+        },
+        "dimensions": {
+          "length": 70,
+          "width": 70,
+          "height": 40,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Switches",
+        "subSubcategory": "Modular Switches",
+        "brand": "Anchor",
+        "manufacturer": "Panasonic Life Solutions",
+        "productType": "Component"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "Ivory",
+            "sku": "SW-MOD-10A-IVY",
+            "price": 160,
+            "inventory": 200,
+            "images": [
+              "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "White",
+            "sku": "SW-MOD-10A-WHT",
+            "price": 165,
+            "inventory": 180,
+            "images": [
+              "https://i.pinimg.com/736x/46/75/67/4675678cf2a86a108410a9574da7cd23.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate",
+          "certification": [
+            "ISI"
+          ],
+          "warrantyPeriod": "1 year",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 160,
+        "comparePrice": 200,
+        "costPrice": 120,
+        "currency": "INR",
+        "taxRate": 18
+      },
+      "inventory": {
+        "totalQuantity": 380,
+        "availableQuantity": 360,
+        "reservedQuantity": 20,
+        "lowStockThreshold": 30,
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "switch",
+          "modular",
+          "10amp",
+          "ivory"
+        ],
+        "metaTitle": "10A Modular Switch Ivory | Anchor",
+        "metaDescription": "Reliable 10A modular switch with ivory finish. Perfect for homes and offices.",
+        "keywords": [
+          "10 amp switch",
+          "modular switch ivory",
+          "anchor switch"
+        ],
+        "isActive": true,
+        "isFeatured": false,
+        "isBestseller": false,
+        "featuredOrder": 0,
+        "promotionText": "Limited Stock Offer"
+      },
+      "timestamps": {
+        "createdAt": "2024-02-01T10:00:00Z",
+        "updatedAt": "2024-08-12T09:15:00Z",
+        "publishedAt": "2024-02-02T08:30:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-SW-003",
+        "sku": "SW-MOD-20A-003",
+        "slug": "modular-switch-20amp-black",
+        "barcode": "8901030875651"
+      },
+      "characteristics": {
+        "title": "20A Modular Switch - Black",
+        "description": "Heavy-duty 20 Amp modular switch in stylish matte black finish. Ideal for air conditioners and heavy appliances.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/a8/0d/32/a80d32d1fb96c23775f1c508f1181518.jpg",
+            "https://i.pinimg.com/736x/46/75/67/4675678cf2a86a108410a9574da7cd23.jpg",
+            "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/16_Amp_Switch_Desk_Banner.webp"
+        },
+        "specifications": [
+          {
+            "group": "Electrical",
+            "name": "Current Rating",
+            "value": "20",
+            "unit": "A"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage Rating",
+            "value": "250",
+            "unit": "V"
+          },
+          {
+            "group": "Physical",
+            "name": "Module Size",
+            "value": "2",
+            "unit": "module"
+          }
+        ],
+        "weight": {
+          "value": 60,
+          "unit": "grams"
+        },
+        "dimensions": {
+          "length": 72,
+          "width": 72,
+          "height": 45,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Switches",
+        "subSubcategory": "Modular Switches",
+        "brand": "GM Modular",
+        "manufacturer": "GM Electricals",
+        "productType": "Component"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "Black",
+            "sku": "SW-MOD-20A-BLK",
+            "price": 360,
+            "inventory": 100,
+            "images": [
+              "https://i.pinimg.com/736x/a8/0d/32/a80d32d1fb96c23775f1c508f1181518.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Gray",
+            "sku": "SW-MOD-20A-GRY",
+            "price": 365,
+            "inventory": 90,
+            "images": [
+              "https://i.pinimg.com/1200x/8a/24/39/8a243941345a54bcea6acd49a57a8ab6.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate",
+          "certification": [
+            "ISI",
+            "CE"
+          ],
+          "warrantyPeriod": "2 years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 360,
+        "comparePrice": 420,
+        "costPrice": 280,
+        "currency": "INR",
+        "taxRate": 18
+      },
+      "inventory": {
+        "totalQuantity": 190,
+        "availableQuantity": 190,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 20,
+        "trackInventory": true,
+        "allowBackorder": true
+      },
+      "marketing": {
+        "tags": [
+          "switch",
+          "20amp",
+          "black",
+          "heavy-duty"
+        ],
+        "metaTitle": "20A Modular Switch Black | GM Modular",
+        "metaDescription": "Buy heavy-duty 20A modular switch in matte black. Ideal for air conditioners and heavy appliances.",
+        "keywords": [
+          "20 amp switch",
+          "gm modular switch",
+          "black switch"
+        ],
+        "isActive": true,
+        "isFeatured": false,
+        "isBestseller": true,
+        "featuredOrder": 0,
+        "promotionText": "New Arrival"
+      },
+      "timestamps": {
+        "createdAt": "2024-02-20T12:00:00Z",
+        "updatedAt": "2024-08-15T10:45:00Z",
+        "publishedAt": "2024-02-21T09:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-CBL-002",
+        "sku": "CBL-HDMI-4K-2M",
+        "slug": "hdmi-cable-4k-2meter",
+        "barcode": "8901234567890"
+      },
+      "characteristics": {
+        "title": "HDMI Cable 4K Ultra HD - 2 Meter",
+        "description": "High-speed HDMI cable supporting 4K Ultra HD resolution at 60Hz. Gold-plated connectors ensure optimal signal transmission. Perfect for connecting gaming consoles, streaming devices, and laptops to 4K TVs and monitors.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/1200x/14/16/08/1416088ac4a7b8691247d9998ffc1c5a.jpg",
+            "https://i.pinimg.com/1200x/80/1e/8f/801e8f051b7789dd86f197fc925e9f93.jpg",
+            "https://i.pinimg.com/1200x/59/82/fc/5982fc6851666821c152d00db37a4e31.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+        },
+        "specifications": [
+          {
+            "group": "Technical",
+            "name": "HDMI Version",
+            "value": "2.0",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Maximum Resolution",
+            "value": "4K",
+            "unit": "UHD"
+          },
+          {
+            "group": "Performance",
+            "name": "Refresh Rate",
+            "value": "60",
+            "unit": "Hz"
+          },
+          {
+            "group": "Physical",
+            "name": "Cable Length",
+            "value": "2",
+            "unit": "meter"
+          },
+          {
+            "group": "Technical",
+            "name": "Bandwidth",
+            "value": "18",
+            "unit": "Gbps"
+          }
+        ],
+        "weight": {
+          "value": 320,
+          "unit": "grams"
+        },
+        "dimensions": {
+          "length": 2000,
+          "width": 8,
+          "height": 8,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Cables",
+        "subSubcategory": "HDMI Cables",
+        "brand": "Belkin",
+        "manufacturer": "Belkin International",
+        "productType": "Accessory"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "length",
+            "name": "1 Meter",
+            "sku": "CBL-HDMI-4K-1M",
+            "price": 899,
+            "inventory": 85,
+            "images": [
+              "https://i.pinimg.com/1200x/59/82/fc/5982fc6851666821c152d00db37a4e31.jpg"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "2 Meter",
+            "sku": "CBL-HDMI-4K-2M",
+            "price": 1299,
+            "inventory": 120,
+            "images": [
+              "https://i.pinimg.com/1200x/59/82/fc/5982fc6851666821c152d00db37a4e31.jpg"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "3 Meter",
+            "sku": "CBL-HDMI-4K-3M",
+            "price": 1699,
+            "inventory": 60,
+            "images": [
+              "https://i.pinimg.com/1200x/59/82/fc/5982fc6851666821c152d00db37a4e31.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Copper with PVC Jacket",
+          "certification": [
+            "HDMI Certified",
+            "RoHS"
+          ],
+          "warrantyPeriod": "Lifetime",
+          "countryOfOrigin": "China"
+        }
+      },
+      "pricing": {
+        "basePrice": 1299,
+        "comparePrice": 1599,
+        "costPrice": 950,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "bulk",
+            "value": 12,
+            "minQuantity": 25,
+            "validFrom": "2024-01-01T00:00:00Z",
+            "validTo": "2024-12-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 265,
+        "availableQuantity": 265,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 20,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 24,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 25,
+            "maxQuantity": 49,
+            "discountPercentage": 12
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 999,
+            "discountPercentage": 18
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": true
+      },
+      "marketing": {
+        "tags": [
+          "hdmi",
+          "cable",
+          "4k",
+          "ultra hd",
+          "gaming",
+          "streaming"
+        ],
+        "metaTitle": "4K HDMI Cable 2M | Ultra HD | Gold Plated | Belkin",
+        "metaDescription": "Premium 4K HDMI cable with gold-plated connectors. Supports 4K@60Hz, perfect for gaming and streaming. Lifetime warranty included.",
+        "keywords": [
+          "4k hdmi cable",
+          "ultra hd cable",
+          "hdmi 2.0",
+          "gaming cable",
+          "belkin hdmi"
+        ],
+        "isActive": true,
+        "isFeatured": false,
+        "isBestseller": true,
+        "featuredOrder": 0,
+        "promotionText": ""
+      },
+      "timestamps": {
+        "createdAt": "2024-02-10T11:45:00Z",
+        "updatedAt": "2024-08-12T16:30:00Z",
+        "publishedAt": "2024-02-11T10:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-CBL-005",
+        "sku": "CBL-ETH-CAT6-5M",
+        "slug": "cat6-ethernet-cable-5meter",
+        "barcode": "8901234567895"
+      },
+      "characteristics": {
+        "title": "Cat6 Ethernet Cable - 5 Meter",
+        "description": "High-performance Cat6 Ethernet LAN cable. Supports speeds up to 1Gbps and bandwidth up to 250MHz. Ideal for routers, switches, modems, and gaming consoles. Durable PVC jacket for long-lasting use.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/1200x/47/b5/22/47b522ea58c5528dd5da2df95e15dd26.jpg",
+            "https://i.pinimg.com/1200x/00/80/8b/00808bba6dd894f046ca7c8713e13719.jpg",
+            "https://i.pinimg.com/1200x/c4/8b/7e/c48b7ea1685fa50571ef84200a959707.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+        },
+        "specifications": [
+          {
+            "group": "Technical",
+            "name": "Cable Category",
+            "value": "Cat6",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Max Speed",
+            "value": "1",
+            "unit": "Gbps"
+          },
+          {
+            "group": "Performance",
+            "name": "Bandwidth",
+            "value": "250",
+            "unit": "MHz"
+          },
+          {
+            "group": "Physical",
+            "name": "Cable Length",
+            "value": "5",
+            "unit": "meter"
+          },
+          {
+            "group": "Technical",
+            "name": "Connector Type",
+            "value": "RJ45",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 400,
+          "unit": "grams"
+        },
+        "dimensions": {
+          "length": 5000,
+          "width": 6,
+          "height": 6,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Cables",
+        "subSubcategory": "Ethernet Cables",
+        "brand": "D-Link",
+        "manufacturer": "D-Link Corporation",
+        "productType": "Networking Accessory"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "length",
+            "name": "1 Meter",
+            "sku": "CBL-ETH-CAT6-1M",
+            "price": 199,
+            "inventory": 150,
+            "images": [
+              "https://i.pinimg.com/1200x/c4/8b/7e/c48b7ea1685fa50571ef84200a959707.jpg"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "3 Meter",
+            "sku": "CBL-ETH-CAT6-3M",
+            "price": 349,
+            "inventory": 120,
+            "images": [
+              "https://i.pinimg.com/1200x/c4/8b/7e/c48b7ea1685fa50571ef84200a959707.jpg"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "5 Meter",
+            "sku": "CBL-ETH-CAT6-5M",
+            "price": 499,
+            "inventory": 80,
+            "images": [
+              "https://i.pinimg.com/1200x/c4/8b/7e/c48b7ea1685fa50571ef84200a959707.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Copper with PVC Jacket",
+          "certification": [
+            "RoHS",
+            "ISO 11801"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 499,
+        "comparePrice": 699,
+        "costPrice": 320,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "bulk",
+            "value": 10,
+            "minQuantity": 20,
+            "validFrom": "2024-01-01T00:00:00Z",
+            "validTo": "2024-12-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 350,
+        "availableQuantity": 350,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 15,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 19,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 20,
+            "maxQuantity": 49,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 200,
+            "discountPercentage": 15
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "ethernet",
+          "cat6",
+          "lan cable",
+          "rj45",
+          "networking"
+        ],
+        "metaTitle": "Cat6 Ethernet Cable 5M | High Speed LAN | D-Link",
+        "metaDescription": "Premium Cat6 LAN cable with RJ45 connectors. Supports 1Gbps speed, 250MHz bandwidth. Ideal for gaming, streaming & home office.",
+        "keywords": [
+          "cat6 cable",
+          "ethernet cable",
+          "lan cable 5m",
+          "d-link networking"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": false,
+        "featuredOrder": 1,
+        "promotionText": "Buy 2, Get 10% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-03-01T10:30:00Z",
+        "updatedAt": "2024-07-18T15:20:00Z",
+        "publishedAt": "2024-03-02T12:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-CBL-004",
+        "sku": "CBL-SOLAR-4SQMM",
+        "slug": "solar-cable-4sqmm",
+        "barcode": "8901234567910"
+      },
+      "characteristics": {
+        "title": "Solar Cable - 4 sqmm",
+        "description": "High-quality 4 sqmm solar DC cable designed for photovoltaic applications. UV resistant, weatherproof, and suitable for outdoor installations. Ensures low transmission loss and long service life.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/71/b8/54/71b854c795efcea44d900c4f440e770b.jpg",
+            "https://i.pinimg.com/736x/9a/41/72/9a4172fdd4d5ed106aad0292f69a2159.jpg",
+            "https://i.pinimg.com/1200x/57/a3/b5/57a3b51784064502dd11264cdc90ace9.jpg"
+          ],
+          "offers": "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+        },
+        "specifications": [
+          {
+            "group": "Electrical",
+            "name": "Conductor Material",
+            "value": "Tinned Copper",
+            "unit": ""
+          },
+          {
+            "group": "Electrical",
+            "name": "Cross Sectional Area",
+            "value": "4",
+            "unit": "sqmm"
+          },
+          {
+            "group": "Performance",
+            "name": "Rated Voltage",
+            "value": "1800",
+            "unit": "V DC"
+          },
+          {
+            "group": "Performance",
+            "name": "Temperature Range",
+            "value": "-40 to +90",
+            "unit": "°C"
+          },
+          {
+            "group": "Physical",
+            "name": "Insulation",
+            "value": "XLPO (UV & Weather Resistant)",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 0.095,
+          "unit": "kg/m"
+        },
+        "dimensions": {
+          "length": 100,
+          "width": 100,
+          "height": 100,
+          "unit": "mm (per coil of 100m)"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Cables",
+        "subSubcategory": "Solar Cables",
+        "brand": "Polycab",
+        "manufacturer": "Polycab India Ltd.",
+        "productType": "Wires & Cables"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "length",
+            "name": "10 Meter Coil",
+            "sku": "CBL-SOLAR-4SQMM-10M",
+            "price": 950,
+            "inventory": 80,
+            "images": [
+              "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "50 Meter Coil",
+            "sku": "CBL-SOLAR-4SQMM-50M",
+            "price": 4200,
+            "inventory": 60,
+            "images": [
+              "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+            ]
+          },
+          {
+            "type": "length",
+            "name": "100 Meter Coil",
+            "sku": "CBL-SOLAR-4SQMM-100M",
+            "price": 7999,
+            "inventory": 40,
+            "images": [
+              "https://cdn.eleczo.com/media/wysiwyg/ebbmedia/electric-wire-discount-desktop.webp"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Tinned Copper with XLPO Insulation",
+          "certification": [
+            "TÜV Certified",
+            "IEC 62930 Compliant",
+            "RoHS Compliant"
+          ],
+          "warrantyPeriod": "5 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 7999,
+        "comparePrice": 8999,
+        "costPrice": 6200,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "seasonal",
+            "value": 10,
+            "minQuantity": 1,
+            "validFrom": "2024-04-01T00:00:00Z",
+            "validTo": "2024-06-30T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 180,
+        "availableQuantity": 180,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 10,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 24,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 25,
+            "maxQuantity": 100,
+            "discountPercentage": 12
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "solar cable",
+          "4 sqmm cable",
+          "dc cable",
+          "pv cable"
+        ],
+        "metaTitle": "Solar Cable 4 sqmm | Polycab | UV Resistant | TUV Certified",
+        "metaDescription": "Polycab Solar Cable 4 sqmm with tinned copper conductor and XLPO insulation. UV & weather resistant, long life, suitable for solar power plants.",
+        "keywords": [
+          "solar cable 4 sqmm",
+          "pv cable",
+          "dc solar wire",
+          "poly cab solar cable"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 3,
+        "promotionText": "Go Green with Polycab Solar Cables – 10% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-03-10T09:15:00Z",
+        "updatedAt": "2024-07-25T17:40:00Z",
+        "publishedAt": "2024-03-15T12:30:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-FAN-005",
+        "sku": "FAN-USHA-400MM",
+        "slug": "usha-table-fan-400mm",
+        "barcode": "8901234567915"
+      },
+      "characteristics": {
+        "title": "Usha Table Fan - 400mm High Speed",
+        "description": "Compact and powerful Usha table fan with 400mm sweep. Provides high-speed air delivery with 3-speed control. Adjustable tilt and oscillation for wider coverage. Energy-efficient motor with silent operation.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/1200x/b1/00/db/b100dbe13df663caa7ceea21b149667a.jpg",
+            "https://i.pinimg.com/736x/95/9b/af/959baf856f26a1784c0ff56124358d3f.jpg",
+            "https://i.pinimg.com/736x/b9/c8/d9/b9c8d9451e88a6685d40a32004833c72.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Sweep Size",
+            "value": "400",
+            "unit": "mm"
+          },
+          {
+            "group": "Performance",
+            "name": "Air Delivery",
+            "value": "65",
+            "unit": "CMM"
+          },
+          {
+            "group": "Performance",
+            "name": "Speed",
+            "value": "1350",
+            "unit": "RPM"
+          },
+          {
+            "group": "Electrical",
+            "name": "Power Consumption",
+            "value": "55",
+            "unit": "W"
+          },
+          {
+            "group": "Physical",
+            "name": "No. of Blades",
+            "value": "3",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 3.2,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 450,
+          "width": 250,
+          "height": 500,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Fans",
+        "subSubcategory": "Table Fans",
+        "brand": "Usha",
+        "manufacturer": "Usha International Ltd.",
+        "productType": "Home Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "White",
+            "sku": "FAN-USHA-400MM-WH",
+            "price": 1799,
+            "inventory": 90,
+            "images": [
+              "https://i.pinimg.com/1200x/b1/00/db/b100dbe13df663caa7ceea21b149667a.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Blue",
+            "sku": "FAN-USHA-400MM-BL",
+            "price": 1899,
+            "inventory": 70,
+            "images": [
+              "https://i.pinimg.com/736x/95/9b/af/959baf856f26a1784c0ff56124358d3f.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Black",
+            "sku": "FAN-USHA-400MM-BK",
+            "price": 1999,
+            "inventory": 50,
+            "images": [
+              "https://i.pinimg.com/736x/b9/c8/d9/b9c8d9451e88a6685d40a32004833c72.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "ABS Body with Aluminium Blades",
+          "certification": [
+            "ISI Certified",
+            "BEE Star Rated"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 1899,
+        "comparePrice": 2199,
+        "costPrice": 1450,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "festival",
+            "value": 10,
+            "minQuantity": 1,
+            "validFrom": "2024-08-01T00:00:00Z",
+            "validTo": "2024-08-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 210,
+        "availableQuantity": 210,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 12,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 3,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 24,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 25,
+            "maxQuantity": 100,
+            "discountPercentage": 12
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": true
+      },
+      "marketing": {
+        "tags": [
+          "table fan",
+          "usha",
+          "portable fan",
+          "400mm fan"
+        ],
+        "metaTitle": "Usha Table Fan 400mm | High Speed | Portable Fan",
+        "metaDescription": "Usha high-speed table fan with 400mm sweep. Portable design, silent motor, 3-speed control, perfect for home & office use.",
+        "keywords": [
+          "usha table fan",
+          "portable fan",
+          "400mm fan",
+          "high speed fan"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 3,
+        "promotionText": "Festival Offer – 10% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-04-10T11:00:00Z",
+        "updatedAt": "2024-07-30T16:15:00Z",
+        "publishedAt": "2024-04-12T12:30:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-FAN-003",
+        "sku": "FAN-CEIL-1200-WD",
+        "slug": "ceiling-fan-1200mm-wooden-finish",
+        "barcode": "8905678901234"
+      },
+      "characteristics": {
+        "title": "Premium Ceiling Fan 1200mm - Wooden Finish",
+        "description": "Energy-efficient premium ceiling fan with elegant wooden finish blades. Features aerodynamically designed blades for maximum air delivery with minimal noise. Comes with decorative lights and remote control.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/f4/b3/0c/f4b30c8d8db6050c44e2685dac3fdcd7.jpg",
+            "https://i.pinimg.com/736x/e1/27/3f/e1273ff05476bb139f95414f2b0b0888.jpg",
+            "https://i.pinimg.com/736x/f2/84/b3/f284b31e467f4b52bcd249273df829fc.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Sweep Size",
+            "value": "1200",
+            "unit": "mm"
+          },
+          {
+            "group": "Performance",
+            "name": "Air Delivery",
+            "value": "220",
+            "unit": "CMM"
+          },
+          {
+            "group": "Electrical",
+            "name": "Power Consumption",
+            "value": "75",
+            "unit": "watts"
+          },
+          {
+            "group": "Performance",
+            "name": "RPM",
+            "value": "380",
+            "unit": "RPM"
+          },
+          {
+            "group": "Technical",
+            "name": "Number of Blades",
+            "value": "3",
+            "unit": ""
+          },
+          {
+            "group": "Technical",
+            "name": "Motor Type",
+            "value": "BLDC",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 6.5,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 1200,
+          "width": 1200,
+          "height": 400,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Fans",
+        "subSubcategory": "Ceiling Fans",
+        "brand": "Usha",
+        "manufacturer": "Usha International Ltd",
+        "productType": "Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "finish",
+            "name": "Wooden Finish",
+            "sku": "FAN-CEIL-1200-WD",
+            "price": 8500,
+            "inventory": 25,
+            "images": [
+              "https://i.pinimg.com/736x/f4/b3/0c/f4b30c8d8db6050c44e2685dac3fdcd7.jpg"
+            ]
+          },
+          {
+            "type": "finish",
+            "name": "Metallic Silver",
+            "sku": "FAN-CEIL-1200-MS",
+            "price": 7800,
+            "inventory": 18,
+            "images": [
+              "https://i.pinimg.com/736x/e1/27/3f/e1273ff05476bb139f95414f2b0b0888.jpg"
+            ]
+          },
+          {
+            "type": "finish",
+            "name": "White",
+            "sku": "FAN-CEIL-1200-WH",
+            "price": 7200,
+            "inventory": 32,
+            "images": [
+              "https://i.pinimg.com/736x/f2/84/b3/f284b31e467f4b52bcd249273df829fc.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Metal Body with Wooden Blades",
+          "certification": [
+            "ISI",
+            "BEE 5 Star",
+            "BIS"
+          ],
+          "warrantyPeriod": "2 years comprehensive",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 8500,
+        "comparePrice": 10500,
+        "costPrice": 6200,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 20,
+            "minQuantity": 1,
+            "validFrom": "2024-08-01T00:00:00Z",
+            "validTo": "2024-08-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 75,
+        "availableQuantity": 70,
+        "reservedQuantity": 5,
+        "lowStockThreshold": 10,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 3,
+            "maxQuantity": 9,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 19,
+            "discountPercentage": 12
+          },
+          {
+            "minQuantity": 20,
+            "maxQuantity": 999,
+            "discountPercentage": 18
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "ceiling fan",
+          "premium",
+          "wooden finish",
+          "energy efficient",
+          "remote control",
+          "BLDC"
+        ],
+        "metaTitle": "Premium Ceiling Fan 1200mm Wooden Finish | Energy Efficient | Usha",
+        "metaDescription": "Buy premium 1200mm ceiling fan with elegant wooden finish. BLDC motor, remote control, decorative lights. 5-star energy rating. 2-year warranty.",
+        "keywords": [
+          "ceiling fan",
+          "wooden finish fan",
+          "1200mm fan",
+          "energy efficient fan",
+          "usha fan",
+          "BLDC motor fan"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": false,
+        "featuredOrder": 2,
+        "promotionText": "20% Off + Free Installation"
+      },
+      "timestamps": {
+        "createdAt": "2024-03-20T09:15:00Z",
+        "updatedAt": "2024-08-14T12:45:00Z",
+        "publishedAt": "2024-03-21T08:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-FAN-003",
+        "sku": "FAN-HAV-1200MM",
+        "slug": "havells-ceiling-fan-1200mm",
+        "barcode": "8901234567903"
+      },
+      "characteristics": {
+        "title": "Havells Ceiling Fan - 1200mm",
+        "description": "Stylish and energy-efficient ceiling fan with 1200mm sweep. Delivers high air thrust with silent operation. Premium metallic finish with rust-free blades, suitable for modern homes and offices.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/91/f8/af/91f8af9ae10500a35ae7b67d72230faf.jpg",
+            "https://i.pinimg.com/736x/6c/42/40/6c4240f2ad2a872e48694101383785cf.jpg",
+            "https://i.pinimg.com/736x/5f/2c/56/5f2c56334d3ebd64fb741a89041b869c.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Sweep Size",
+            "value": "1200",
+            "unit": "mm"
+          },
+          {
+            "group": "Performance",
+            "name": "Air Delivery",
+            "value": "230",
+            "unit": "CMM"
+          },
+          {
+            "group": "Performance",
+            "name": "Speed",
+            "value": "370",
+            "unit": "RPM"
+          },
+          {
+            "group": "Electrical",
+            "name": "Power Consumption",
+            "value": "70",
+            "unit": "W"
+          },
+          {
+            "group": "Physical",
+            "name": "No. of Blades",
+            "value": "3",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 4.5,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 600,
+          "width": 250,
+          "height": 250,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Fans",
+        "subSubcategory": "Ceiling Fans",
+        "brand": "Havells",
+        "manufacturer": "Havells India Ltd.",
+        "productType": "Home Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "White",
+            "sku": "FAN-HAV-1200MM-WH",
+            "price": 2499,
+            "inventory": 70,
+            "images": [
+              "https://i.pinimg.com/736x/91/f8/af/91f8af9ae10500a35ae7b67d72230faf.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Brown",
+            "sku": "FAN-HAV-1200MM-BR",
+            "price": 2599,
+            "inventory": 50,
+            "images": [
+              "https://i.pinimg.com/736x/6c/42/40/6c4240f2ad2a872e48694101383785cf.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Black",
+            "sku": "FAN-HAV-1200MM-BK",
+            "price": 2699,
+            "inventory": 40,
+            "images": [
+              "https://i.pinimg.com/736x/5f/2c/56/5f2c56334d3ebd64fb741a89041b869c.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Aluminium Blades with Metallic Coating",
+          "certification": [
+            "ISI Certified",
+            "BEE Star Rated"
+          ],
+          "warrantyPeriod": "3 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 2599,
+        "comparePrice": 2999,
+        "costPrice": 1900,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "seasonal",
+            "value": 15,
+            "minQuantity": 1,
+            "validFrom": "2024-04-01T00:00:00Z",
+            "validTo": "2024-06-30T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 160,
+        "availableQuantity": 160,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 10,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 3,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 24,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 25,
+            "maxQuantity": 100,
+            "discountPercentage": 12
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "ceiling fan",
+          "havells",
+          "home appliance",
+          "1200mm fan"
+        ],
+        "metaTitle": "Havells Ceiling Fan 1200mm | High Speed | Energy Efficient",
+        "metaDescription": "Havells ceiling fan with 1200mm sweep. Stylish design, energy-efficient, rust-free blades. Perfect for modern homes.",
+        "keywords": [
+          "havells fan",
+          "ceiling fan 1200mm",
+          "high speed fan",
+          "energy saving fan"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 2,
+        "promotionText": "Summer Sale – 15% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-02-15T09:15:00Z",
+        "updatedAt": "2024-07-25T17:40:00Z",
+        "publishedAt": "2024-02-20T12:30:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-BLB-001",
+        "sku": "BLB-PHILIPS-9W",
+        "slug": "philips-led-bulb-9w",
+        "barcode": "8901234567932"
+      },
+      "characteristics": {
+        "title": "Philips LED Bulb - 9W, Cool Daylight",
+        "description": "Philips 9W LED bulb with bright cool daylight (6500K) illumination. Energy-efficient, long-lasting, and eco-friendly replacement for traditional CFL/incandescent bulbs.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/1200x/b4/49/b8/b449b899293318ead106de4d4fbf844f.jpg",
+            "https://i.pinimg.com/736x/17/d1/68/17d168dacfa92c73c02d0bdf68e89b6e.jpg",
+            "https://i.pinimg.com/736x/17/d1/68/17d168dacfa92c73c02d0bdf68e89b6e.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Wattage",
+            "value": "9",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Luminous Flux",
+            "value": "900",
+            "unit": "Lumens"
+          },
+          {
+            "group": "Performance",
+            "name": "Color Temperature",
+            "value": "6500",
+            "unit": "K"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "220-240",
+            "unit": "V AC"
+          },
+          {
+            "group": "Physical",
+            "name": "Base Type",
+            "value": "B22 (Pin Type)",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 0.12,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 55,
+          "width": 55,
+          "height": 100,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Lighting",
+        "subSubcategory": "LED Bulbs",
+        "brand": "Philips",
+        "manufacturer": "Signify Innovations India Ltd.",
+        "productType": "Lighting Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "wattage",
+            "name": "7W",
+            "sku": "BLB-PHILIPS-7W",
+            "price": 119,
+            "inventory": 120,
+            "images": [
+              "https://i.pinimg.com/1200x/b4/49/b8/b449b899293318ead106de4d4fbf844f.jpg"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "9W",
+            "sku": "BLB-PHILIPS-9W",
+            "price": 149,
+            "inventory": 200,
+            "images": [
+              "https://i.pinimg.com/736x/17/d1/68/17d168dacfa92c73c02d0bdf68e89b6e.jpg"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "12W",
+            "sku": "BLB-PHILIPS-12W",
+            "price": 199,
+            "inventory": 100,
+            "images": [
+              "https://i.pinimg.com/736x/17/d1/68/17d168dacfa92c73c02d0bdf68e89b6e.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate Body with Aluminum Heat Sink",
+          "certification": [
+            "ISI Certified",
+            "BIS Approved",
+            "RoHS Compliant"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 149,
+        "comparePrice": 199,
+        "costPrice": 90,
+        "currency": "INR",
+        "taxRate": 12,
+        "discounts": [
+          {
+            "type": "seasonal",
+            "value": 15,
+            "minQuantity": 2,
+            "validFrom": "2024-11-01T00:00:00Z",
+            "validTo": "2024-11-30T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 420,
+        "availableQuantity": 420,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 20,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 199,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 200,
+            "maxQuantity": 500,
+            "discountPercentage": 15
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "led bulb",
+          "philips lighting",
+          "9w bulb",
+          "energy saving bulb"
+        ],
+        "metaTitle": "Philips LED Bulb 9W | Cool Daylight | Energy Efficient",
+        "metaDescription": "Philips 9W LED Bulb with 900 lumens brightness. Long-lasting, eco-friendly, energy-saving LED light for homes and offices.",
+        "keywords": [
+          "philips led bulb",
+          "9w bulb",
+          "energy saving light",
+          "cool daylight bulb"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 5,
+        "promotionText": "Diwali Lighting Sale – 15% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-06-05T10:00:00Z",
+        "updatedAt": "2024-07-25T18:00:00Z",
+        "publishedAt": "2024-06-10T12:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-LED-PL-001",
+        "sku": "LED-HAVELLS-18W-PL",
+        "slug": "havells-led-panel-light-18w",
+        "barcode": "8901234567986"
+      },
+      "characteristics": {
+        "title": "Havells LED Panel Light - 18W Round, Cool White",
+        "description": "Havells 18W round LED panel light with slim design and high brightness. Ideal for false ceilings, offices, living rooms, and commercial spaces. Provides glare-free, uniform illumination with energy efficiency.",
+        "images": {
+          "primary": [
+            "https://i.pinimg.com/736x/35/fd/f8/35fdf81583c902aa0f5a2ae77f9ec6a7.jpg",
+            "https://i.pinimg.com/1200x/83/40/7b/83407bb339228efd2d0a4fae6bd4c8f6.jpg",
+            "https://i.pinimg.com/1200x/61/de/bc/61debc9cbe5473dd96e6c7a13a5f7ce4.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Wattage",
+            "value": "18",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Luminous Flux",
+            "value": "1800",
+            "unit": "Lumens"
+          },
+          {
+            "group": "Performance",
+            "name": "Color Temperature",
+            "value": "6500",
+            "unit": "K"
+          },
+          {
+            "group": "Performance",
+            "name": "Beam Angle",
+            "value": "120",
+            "unit": "Degrees"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "220-240",
+            "unit": "V AC"
+          },
+          {
+            "group": "Physical",
+            "name": "Shape",
+            "value": "Round",
+            "unit": ""
+          },
+          {
+            "group": "Physical",
+            "name": "Cutout Size",
+            "value": "155",
+            "unit": "mm"
+          }
+        ],
+        "weight": {
+          "value": 0.35,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 180,
+          "width": 180,
+          "height": 35,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Lighting",
+        "subSubcategory": "LED Panel Lights",
+        "brand": "Havells",
+        "manufacturer": "Havells India Ltd.",
+        "productType": "Lighting Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "wattage",
+            "name": "12W Round",
+            "sku": "LED-HAVELLS-12W-PL",
+            "price": 499,
+            "inventory": 150,
+            "images": [
+              "https://i.pinimg.com/736x/35/fd/f8/35fdf81583c902aa0f5a2ae77f9ec6a7.jpg"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "18W Round",
+            "sku": "LED-HAVELLS-18W-PL",
+            "price": 699,
+            "inventory": 220,
+            "images": [
+              "https://i.pinimg.com/1200x/83/40/7b/83407bb339228efd2d0a4fae6bd4c8f6.jpg"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "24W Square",
+            "sku": "LED-HAVELLS-24W-PL",
+            "price": 899,
+            "inventory": 100,
+            "images": [
+              "https://i.pinimg.com/1200x/61/de/bc/61debc9cbe5473dd96e6c7a13a5f7ce4.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate with Aluminum Heat Sink",
+          "certification": [
+            "ISI Certified",
+            "BIS Approved",
+            "RoHS Compliant"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 699,
+        "comparePrice": 899,
+        "costPrice": 450,
+        "currency": "INR",
+        "taxRate": 12,
+        "discounts": [
+          {
+            "type": "festive",
+            "value": 20,
+            "minQuantity": 2,
+            "validFrom": "2024-10-15T00:00:00Z",
+            "validTo": "2024-11-15T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 470,
+        "availableQuantity": 470,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 30,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 199,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 200,
+            "maxQuantity": 500,
+            "discountPercentage": 15
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "led panel light",
+          "havells lighting",
+          "18w panel",
+          "ceiling light",
+          "slim led"
+        ],
+        "metaTitle": "Havells 18W LED Panel Light | Slim Round | Cool White",
+        "metaDescription": "Buy Havells 18W slim round LED panel light for bright and energy-efficient illumination. Perfect for false ceilings, homes, and offices.",
+        "keywords": [
+          "havells led panel light",
+          "18w round panel",
+          "slim ceiling light",
+          "cool white panel"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 8,
+        "promotionText": "Festive Lighting Sale – Save 20%"
+      },
+      "timestamps": {
+        "createdAt": "2024-06-12T10:00:00Z",
+        "updatedAt": "2024-07-30T18:00:00Z",
+        "publishedAt": "2024-06-15T12:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-LED-TUBE-001",
+        "sku": "LED-PHILIPS-20W-TUBE",
+        "slug": "philips-led-tube-light-20w",
+        "barcode": "8901234567999"
+      },
+      "characteristics": {
+        "title": "Philips LED Tube Light - 20W Batten, Cool White",
+        "description": "Philips 20W LED batten tube light with glare-free bright light and energy efficiency. Slim design suitable for homes, offices, and commercial spaces. Ensures uniform light distribution with long life LED technology.",
+        "images": {
+          "primary": [
+            "https://5.imimg.com/data5/SELLER/Default/2021/12/KR/BA/OZ/11555977/philips-slimline-led-batten-20w-1000x1000.jpg",
+            "https://5.imimg.com/data5/FT/VE/TJ/SELLER-47548193/philips-slim-line-20w-led-batten-6500k-cool-day-light--1000x1000.png",
+            "https://m.media-amazon.com/images/I/41v0PheDigL._SL1080_.jpg"
+          ],
+          "offers": ""
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Wattage",
+            "value": "20",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Luminous Flux",
+            "value": "2000",
+            "unit": "Lumens"
+          },
+          {
+            "group": "Performance",
+            "name": "Color Temperature",
+            "value": "6500",
+            "unit": "K"
+          },
+          {
+            "group": "Performance",
+            "name": "Life Span",
+            "value": "25000",
+            "unit": "Hours"
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "220-240",
+            "unit": "V AC"
+          },
+          {
+            "group": "Physical",
+            "name": "Shape",
+            "value": "Batten Tube",
+            "unit": ""
+          },
+          {
+            "group": "Physical",
+            "name": "Length",
+            "value": "1200",
+            "unit": "mm"
+          }
+        ],
+        "weight": {
+          "value": 0.45,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 1200,
+          "width": 35,
+          "height": 25,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Lighting",
+        "subSubcategory": "LED Tube Lights",
+        "brand": "Philips",
+        "manufacturer": "Signify Innovations India Ltd.",
+        "productType": "Lighting Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "wattage",
+            "name": "10W LED Batten",
+            "sku": "LED-PHILIPS-10W-TUBE",
+            "price": 349,
+            "inventory": 120,
+            "images": [
+              "https://5.imimg.com/data5/SELLER/Default/2021/12/KR/BA/OZ/11555977/philips-slimline-led-batten-20w-1000x1000.jpg"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "20W LED Batten",
+            "sku": "LED-PHILIPS-20W-TUBE",
+            "price": 549,
+            "inventory": 200,
+            "images": [
+              "https://5.imimg.com/data5/FT/VE/TJ/SELLER-47548193/philips-slim-line-20w-led-batten-6500k-cool-day-light--1000x1000.png"
+            ]
+          },
+          {
+            "type": "wattage",
+            "name": "24W LED Batten",
+            "sku": "LED-PHILIPS-24W-TUBE",
+            "price": 699,
+            "inventory": 90,
+            "images": [
+              "https://m.media-amazon.com/images/I/41v0PheDigL._SL1080_.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "Polycarbonate Housing with Aluminum Heat Sink",
+          "certification": [
+            "ISI Certified",
+            "BIS Approved",
+            "RoHS Compliant"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 549,
+        "comparePrice": 699,
+        "costPrice": 350,
+        "currency": "INR",
+        "taxRate": 12,
+        "discounts": [
+          {
+            "type": "festive",
+            "value": 15,
+            "minQuantity": 2,
+            "validFrom": "2024-10-20T00:00:00Z",
+            "validTo": "2024-11-20T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 410,
+        "availableQuantity": 410,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 30,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 199,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 200,
+            "maxQuantity": 500,
+            "discountPercentage": 18
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "led tube light",
+          "philips batten",
+          "20w tube",
+          "slim tube light",
+          "cool white"
+        ],
+        "metaTitle": "Philips 20W LED Tube Light | Batten | Cool White | Energy Efficient",
+        "metaDescription": "Shop Philips 20W LED tube batten light for bright, uniform, and energy-efficient lighting. Perfect for homes, offices, and commercial use.",
+        "keywords": [
+          "philips led tube",
+          "20w batten light",
+          "tube light led",
+          "philips lighting"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 9,
+        "promotionText": "Festive Lighting Offer – Save 15%"
+      },
+      "timestamps": {
+        "createdAt": "2024-06-20T10:00:00Z",
+        "updatedAt": "2024-07-30T18:00:00Z",
+        "publishedAt": "2024-06-25T12:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-HTR-001",
+        "sku": "HTR-FAN-BAJAJ-2000W",
+        "slug": "bajaj-blow-hot-fan-heater-2000w",
+        "barcode": "8901309215678"
+      },
+      "characteristics": {
+        "title": "Bajaj Blow Hot Fan Heater - 2000W",
+        "description": "Compact and powerful fan heater with 2000W heating element. Features dual heat settings, thermal cut-out for safety, and a built-in fan for quick and even heating. Ideal for small to medium-sized rooms.",
+        "images": {
+          "primary": [
+            "https://m.media-amazon.com/images/I/71w-D3M9iUL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61wcUEhvg1L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71gvcjxru1L._SL1500_.jpg"
+          ],
+          "offers": "https://rukminim2.flixcart.com/image/656/202/cms-rpd-images/7d143d575143440b89f5ba0a76d1b4de_17cb8668753_image.jpeg?q=90"
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Power",
+            "value": "2000",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Heat Settings",
+            "value": "1000W / 2000W",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Heating Method",
+            "value": "Fan-forced convection",
+            "unit": ""
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "230",
+            "unit": "V"
+          },
+          {
+            "group": "Physical",
+            "name": "Cord Length",
+            "value": "1.5",
+            "unit": "m"
+          }
+        ],
+        "weight": {
+          "value": 1.2,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 250,
+          "width": 120,
+          "height": 220,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Heaters",
+        "subSubcategory": "Fan Heaters",
+        "brand": "Bajaj",
+        "manufacturer": "Bajaj Electricals Ltd.",
+        "productType": "Home Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "color",
+            "name": "White",
+            "sku": "HTR-FAN-BAJAJ-2000W-WH",
+            "price": 1899,
+            "inventory": 60,
+            "images": [
+              "https://m.media-amazon.com/images/I/71w-D3M9iUL._SL1500_.jpg"
+            ]
+          },
+          {
+            "type": "color",
+            "name": "Black",
+            "sku": "HTR-FAN-BAJAJ-2000W-BK",
+            "price": 1999,
+            "inventory": 40,
+            "images": [
+              "https://m.media-amazon.com/images/I/61wcUEhvg1L._SL1500_.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "ABS Body with Metal Grill",
+          "certification": [
+            "ISI Certified",
+            "Overheat Protection"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 1999,
+        "comparePrice": 2499,
+        "costPrice": 1500,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "seasonal",
+            "value": 20,
+            "minQuantity": 1,
+            "validFrom": "2024-11-01T00:00:00Z",
+            "validTo": "2025-01-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 100,
+        "availableQuantity": 100,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 5,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 10
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 200,
+            "discountPercentage": 15
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "fan heater",
+          "room heater",
+          "bajaj heater",
+          "portable heater"
+        ],
+        "metaTitle": "Bajaj Blow Hot Fan Heater 2000W | Compact & Powerful Room Heater",
+        "metaDescription": "Buy Bajaj Blow Hot Fan Heater 2000W. Dual heat settings, compact design, and fast heating with fan-forced convection. Perfect for winter comfort.",
+        "keywords": [
+          "bajaj fan heater",
+          "room heater 2000w",
+          "winter heater",
+          "electric heater"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 3,
+        "promotionText": "Winter Sale – 20% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-10-01T09:15:00Z",
+        "updatedAt": "2025-01-05T17:40:00Z",
+        "publishedAt": "2024-10-05T12:30:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-HTR-IR-001",
+        "sku": "HTR-INFRARED-ORPAT-1200W",
+        "slug": "orpat-infrared-room-heater-1200w",
+        "barcode": "8901396078901"
+      },
+      "characteristics": {
+        "title": "Orpat Infrared Room Heater - 1200W",
+        "description": "Energy-efficient infrared room heater with 2 quartz heating rods. Provides instant heating with silent operation, ideal for spot heating in small to medium rooms. Safety tip-over switch and thermal cut-off included.",
+        "images": {
+          "primary": [
+            "https://5.imimg.com/data5/SELLER/Default/2024/11/468903084/UN/NF/GA/15197128/orpat-ohh-1200-halogen-heater-1000x1000.jpg",
+            "https://m.media-amazon.com/images/I/81Fq+6WDfUL._SL1500_.jpg",
+            "https://cdn.moglix.com/p/J/8/H/d/MINJ8HUOIU71O-xxlarge.jpg"
+          ],
+          "offers": "https://assets.gadgets360cdn.com/pricee/assets/category/201812/Room-Heaters-og_1544434442.jpg"
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Power",
+            "value": "1200",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Heat Settings",
+            "value": "400W / 800W / 1200W",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Heating Method",
+            "value": "Infrared Quartz Heating Rods",
+            "unit": ""
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "230",
+            "unit": "V"
+          },
+          {
+            "group": "Safety",
+            "name": "Tip-over Switch",
+            "value": "Yes",
+            "unit": ""
+          },
+          {
+            "group": "Safety",
+            "name": "Thermal Cut-off",
+            "value": "Yes",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 1.8,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 310,
+          "width": 150,
+          "height": 260,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Heaters",
+        "subSubcategory": "Infrared Heaters",
+        "brand": "Orpat",
+        "manufacturer": "Orpat Electricals",
+        "productType": "Home Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "heat-setting",
+            "name": "400W",
+            "sku": "HTR-INFRARED-ORPAT-400W",
+            "price": 999,
+            "inventory": 25,
+            "images": [
+              "https://5.imimg.com/data5/SELLER/Default/2024/11/468903084/UN/NF/GA/15197128/orpat-ohh-1200-halogen-heater-1000x1000.jpg"
+            ]
+          },
+          {
+            "type": "heat-setting",
+            "name": "800W",
+            "sku": "HTR-INFRARED-ORPAT-800W",
+            "price": 1299,
+            "inventory": 40,
+            "images": [
+              "https://m.media-amazon.com/images/I/81Fq+6WDfUL._SL1500_.jpg"
+            ]
+          },
+          {
+            "type": "heat-setting",
+            "name": "1200W",
+            "sku": "HTR-INFRARED-ORPAT-1200W",
+            "price": 1599,
+            "inventory": 50,
+            "images": [
+              "https://cdn.moglix.com/p/J/8/H/d/MINJ8HUOIU71O-xxlarge.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "ABS Plastic + Metal Grill",
+          "certification": [
+            "ISI Certified",
+            "Overheat Protection"
+          ],
+          "warrantyPeriod": "1 Year",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 1599,
+        "comparePrice": 1999,
+        "costPrice": 1100,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "festival",
+            "value": 15,
+            "minQuantity": 1,
+            "validFrom": "2024-12-01T00:00:00Z",
+            "validTo": "2025-01-31T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 115,
+        "availableQuantity": 115,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 5,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 200,
+            "discountPercentage": 12
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "infrared heater",
+          "room heater",
+          "orpat heater",
+          "quartz heater",
+          "winter appliance"
+        ],
+        "metaTitle": "Orpat Infrared Room Heater 1200W | Instant Heating with Quartz Rods",
+        "metaDescription": "Buy Orpat Infrared Room Heater 1200W. Quartz rod heating, silent operation, instant warmth, and compact design with safety cut-off. Perfect for winter comfort.",
+        "keywords": [
+          "orpat infrared heater",
+          "infrared room heater",
+          "quartz rod heater",
+          "electric room heater"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": true,
+        "featuredOrder": 4,
+        "promotionText": "Winter Sale – Flat 15% Off"
+      },
+      "timestamps": {
+        "createdAt": "2024-10-10T10:15:00Z",
+        "updatedAt": "2025-01-10T14:25:00Z",
+        "publishedAt": "2024-10-12T12:00:00Z"
+      }
+    },
+    {
+      "identifiers": {
+        "productId": "ELEC-HTR-CR-001",
+        "sku": "HTR-CERAMIC-BAJAJ-2000W",
+        "slug": "bajaj-ceramic-room-heater-2000w",
+        "barcode": "8901234567123"
+      },
+      "characteristics": {
+        "title": "Bajaj Majesty Ceramic Room Heater - 2000W",
+        "description": "Energy-efficient PTC ceramic room heater with adjustable thermostat, two heat settings, and fan-assisted heating. Compact design ideal for quick and uniform heating in small to medium-sized rooms.",
+        "images": {
+          "primary": [
+            "https://m.media-amazon.com/images/I/61hTux21QOL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61+oLXaYZZL._SL1024_.jpg",
+            "https://m.media-amazon.com/images/I/71efzmiC13L._SL1500_.jpg"
+          ],
+          "offers": "https://5.imimg.com/data5/SELLER/Default/2021/12/CA/QI/EW/18439777/51-1000x1000.jpeg"
+        },
+        "specifications": [
+          {
+            "group": "Performance",
+            "name": "Power",
+            "value": "2000",
+            "unit": "W"
+          },
+          {
+            "group": "Performance",
+            "name": "Heat Settings",
+            "value": "1000W / 2000W",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Heating Method",
+            "value": "PTC Ceramic Heating Element",
+            "unit": ""
+          },
+          {
+            "group": "Performance",
+            "name": "Thermostat",
+            "value": "Adjustable",
+            "unit": ""
+          },
+          {
+            "group": "Electrical",
+            "name": "Voltage",
+            "value": "230",
+            "unit": "V"
+          },
+          {
+            "group": "Safety",
+            "name": "Overheat Protection",
+            "value": "Yes",
+            "unit": ""
+          },
+          {
+            "group": "Safety",
+            "name": "Tip-over Switch",
+            "value": "Yes",
+            "unit": ""
+          }
+        ],
+        "weight": {
+          "value": 2.5,
+          "unit": "kg"
+        },
+        "dimensions": {
+          "length": 260,
+          "width": 170,
+          "height": 320,
+          "unit": "mm"
+        }
+      },
+      "anchor": {
+        "category": "Electrical",
+        "subcategory": "Heaters",
+        "subSubcategory": "Ceramic Heaters",
+        "brand": "Bajaj",
+        "manufacturer": "Bajaj Electricals Ltd.",
+        "productType": "Home Appliance"
+      },
+      "classification": {
+        "variants": [
+          {
+            "type": "heat-setting",
+            "name": "1000W",
+            "sku": "HTR-CERAMIC-BAJAJ-1000W",
+            "price": 1999,
+            "inventory": 30,
+            "images": [
+              "https://m.media-amazon.com/images/I/61hTux21QOL._SL1500_.jpg"
+            ]
+          },
+          {
+            "type": "heat-setting",
+            "name": "2000W",
+            "sku": "HTR-CERAMIC-BAJAJ-2000W",
+            "price": 2799,
+            "inventory": 40,
+            "images": [
+              "https://m.media-amazon.com/images/I/61+oLXaYZZL._SL1024_.jpg"
+            ]
+          }
+        ],
+        "attributes": {
+          "material": "ABS Plastic + Metal Grill",
+          "certification": [
+            "ISI Certified",
+            "Overheat Protection"
+          ],
+          "warrantyPeriod": "2 Years",
+          "countryOfOrigin": "India"
+        }
+      },
+      "pricing": {
+        "basePrice": 2799,
+        "comparePrice": 3499,
+        "costPrice": 2100,
+        "currency": "INR",
+        "taxRate": 18,
+        "discounts": [
+          {
+            "type": "seasonal",
+            "value": 20,
+            "minQuantity": 1,
+            "validFrom": "2024-12-01T00:00:00Z",
+            "validTo": "2025-02-15T23:59:59Z",
+            "isActive": true
+          }
+        ]
+      },
+      "inventory": {
+        "totalQuantity": 70,
+        "availableQuantity": 70,
+        "reservedQuantity": 0,
+        "lowStockThreshold": 5,
+        "bulkQuantityTiers": [
+          {
+            "minQuantity": 5,
+            "maxQuantity": 9,
+            "discountPercentage": 5
+          },
+          {
+            "minQuantity": 10,
+            "maxQuantity": 49,
+            "discountPercentage": 8
+          },
+          {
+            "minQuantity": 50,
+            "maxQuantity": 200,
+            "discountPercentage": 12
+          }
+        ],
+        "trackInventory": true,
+        "allowBackorder": false
+      },
+      "marketing": {
+        "tags": [
+          "ceramic heater",
+          "room heater",
+          "bajaj heater",
+          "ptc heater",
+          "portable heater"
+        ],
+        "metaTitle": "Bajaj Ceramic Room Heater 2000W | PTC Heating with Safety Protection",
+        "metaDescription": "Buy Bajaj Ceramic Room Heater 2000W with PTC heating element, dual heat settings, adjustable thermostat, and overheat protection. Compact, portable and safe.",
+        "keywords": [
+          "bajaj ceramic heater",
+          "ceramic room heater",
+          "ptc room heater",
+          "portable electric heater"
+        ],
+        "isActive": true,
+        "isFeatured": true,
+        "isBestseller": false,
+        "featuredOrder": 5,
+        "promotionText": "Winter Deals – Save 20% on Ceramic Heaters"
+      },
+      "timestamps": {
+        "createdAt": "2024-11-20T09:30:00Z",
+        "updatedAt": "2025-01-15T13:45:00Z",
+        "publishedAt": "2024-11-25T12:00:00Z"
+      }
+    }
+  ]
+}

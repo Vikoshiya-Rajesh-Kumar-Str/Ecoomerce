@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - VIKOSHIYA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav_logo">VIKOSHIYA</a>
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products, brands, categories..."
+                    id="searchInput">
+                <i class="fas fa-search" id="searchIcon"></i>
+            </div>
+            <!-- Cart Icon -->
+            <div class="cart-icon-container">
+                <a href="card.html" title="View Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">Checkout</h1>
+
+        <div class="checkout-container">
+            <!-- Checkout Form -->
+            <div class="checkout-form">
+                <form id="checkoutForm">
+                    <!-- Shipping Address -->
+                    <div class="form-section">
+                        <h2 class="section-title"><i class="fas fa-shipping-fast"></i> Shipping Address</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" placeholder="House number and street name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address2">Apartment, suite, etc. (optional)</label>
+                            <input type="text" id="address2" name="address2" placeholder="Apartment, suite, unit, etc.">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">PIN Code *</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" maxlength="6" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Delivery Notes (optional)</label>
+                            <textarea id="notes" name="notes"
+                                placeholder="Any special delivery instructions"></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="saveAddress" name="saveAddress">
+                            <label for="saveAddress">Save this address for future orders</label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="form-section">
+                        <h2 class="section-title"><i class="fas fa-credit-card"></i> Payment Method</h2>
+
+                        <div class="payment-methods">
+                            <div class="payment-option" onclick="selectPayment('card')">
+                                <div class="payment-option-content">
+                                    <div class="payment-option-info">
+                                        <input type="radio" id="paymentCard" name="paymentMethod" value="card">
+                                        <i class="fas fa-credit-card payment-icon"></i>
+                                        <label for="paymentCard">Credit/Debit Card</label>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                </div>
+                                <div class="card-details" id="cardDetails">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number *</label>
+                                        <input type="text" id="cardNumber" name="cardNumber"
+                                            placeholder="1234 5678 9012 3456" maxlength="19">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardName">Name on Card *</label>
+                                        <input type="text" id="cardName" name="cardName" placeholder="John Doe">
+                                    </div>
+                                    <div class="card-row">
+                                        <div class="form-group">
+                                            <label for="cardExpiry">Expiry Date *</label>
+                                            <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY"
+                                                maxlength="5">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cardCvv">CVV *</label>
+                                            <input type="text" id="cardCvv" name="cardCvv" placeholder="123"
+                                                maxlength="4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-option" onclick="selectPayment('upi')">
+                                <div class="payment-option-content">
+                                    <div class="payment-option-info">
+                                        <input type="radio" id="paymentUpi" name="paymentMethod" value="upi">
+                                        <i class="fas fa-mobile-alt payment-icon"></i>
+                                        <label for="paymentUpi">UPI Payment</label>
+                                    </div>
+                                    <div class="upi-icons">
+                                        <span style="font-size: 0.8rem; color: #6b7280;">Google Pay, PhonePe,
+                                            Paytm</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-option" onclick="selectPayment('netbanking')">
+                                <div class="payment-option-content">
+                                    <div class="payment-option-info">
+                                        <input type="radio" id="paymentNetbanking" name="paymentMethod"
+                                            value="netbanking">
+                                        <i class="fas fa-university payment-icon"></i>
+                                        <label for="paymentNetbanking">Net Banking</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-option" onclick="selectPayment('cod')">
+                                <div class="payment-option-content">
+                                    <div class="payment-option-info">
+                                        <input type="radio" id="paymentCod" name="paymentMethod" value="cod">
+                                        <i class="fas fa-money-bill-wave payment-icon"></i>
+                                        <label for="paymentCod">Cash on Delivery</label>
+                                    </div>
+                                    <div class="cod-fee">
+                                        <span style="font-size: 0.8rem; color: #6b7280;">+ ₹40 handling fee</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3 style="margin-bottom: 20px; color: #1e3a8a;">Order Summary</h3>
+                <div class="order-items" id="orderItems">
+                    <!-- Items will be loaded dynamically from localStorage -->
+                </div>
+                <div class="summary-row">
+                    <span>Subtotal (<span id="itemCount">0</span> items):</span>
+                    <span id="subtotalAmount">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shippingAmount">₹99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (18% GST):</span>
+                    <span id="taxAmount">₹0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount:</span>
+                    <span style="color: #28a745;" id="discountAmount">-₹0</span>
+                </div>
+                <div class="summary-row" id="codFeeRow" style="display: none;">
+                    <span>COD Handling Fee:</span>
+                    <span>₹40</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="totalAmount">₹0</span>
+                </div>
+                <button class="place-order-btn" onclick="placeOrder()">
+                    <div class="loading"></div>
+                    <span class="btn-text">
+                        <i class="fas fa-lock"></i> Place Order
+                    </span>
+                </button>
+                <div class="security-info">
+                    <i class="fas fa-shield-alt"></i>
+                    Your payment information is secure and encrypted
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- About Us -->
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                    Vikoshiya is a trusted destination for high-quality electrical products built on reliability,
+                    safety, and innovation. From advanced wiring kits to smart home switches, we empower homes and
+                    businesses with the latest in electrical technology.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#flash-sales">Flash Sales</a></li>
+                    <li><a href="#categories">Product Categories</a></li>
+                    <li><a href="#latest-launch">Latest launch</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: support@vikoshiya.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Location: Virudhunagar, India</p>
+            </div>
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VIKOSHIYA. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
